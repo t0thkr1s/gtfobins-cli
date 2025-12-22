@@ -2,19 +2,19 @@
   "functions": {
     "file-upload": [
       {
-        "description": "",
+        
         "code": "LFILE=dir_to_serve\nkubectl proxy --address=0.0.0.0 --port=4444 --www=$LFILE --www-prefix=/x/\n"
       }
     ],
     "suid": [
       {
-        "description": "",
+        
         "code": "LFILE=dir_to_serve\n./kubectl proxy --address=0.0.0.0 --port=4444 --www=$LFILE --www-prefix=/x/\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "LFILE=dir_to_serve\nsudo kubectl proxy --address=0.0.0.0 --port=4444 --www=$LFILE --www-prefix=/x/\n"
       }
     ]

@@ -2,13 +2,13 @@
   "functions": {
     "shell": [
       {
-        "description": "",
+        
         "code": "timedatectl list-timezones\n!/bin/sh\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "sudo timedatectl list-timezones\n!/bin/sh\n"
       }
     ]

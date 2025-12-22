@@ -2,19 +2,19 @@
   "functions": {
     "file-read": [
       {
-        "description": "",
+        
         "code": "LFILE=file_to_read\nmosquitto -c \"$LFILE\"\n"
       }
     ],
     "suid": [
       {
-        "description": "",
+        
         "code": "LFILE=file_to_read\n./mosquitto -c \"$LFILE\"\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "LFILE=file_to_read\nsudo mosquitto -c \"$LFILE\"\n"
       }
     ]

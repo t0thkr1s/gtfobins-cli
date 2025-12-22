@@ -2,7 +2,7 @@
   "functions": {
     "sudo": [
       {
-        "description": "",
+        
         "code": "sudo ksu -q -e /bin/sh\n"
       }
     ]

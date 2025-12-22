@@ -2,13 +2,13 @@
   "functions": {
     "file-read": [
       {
-        "description": "",
+        
         "code": "LFILE=file_to_read\nbase58 \"$LFILE\" | base58 --decode\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "LFILE=file_to_read\nsudo base58 \"$LFILE\" | base58 --decode\n"
       }
     ]

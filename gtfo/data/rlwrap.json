@@ -2,7 +2,7 @@
   "functions": {
     "shell": [
       {
-        "description": "",
+        
         "code": "rlwrap /bin/sh\n"
       }
     ],
@@ -14,13 +14,13 @@
     ],
     "suid": [
       {
-        "description": "",
+        
         "code": "./rlwrap -H /dev/null /bin/sh -p\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "sudo rlwrap /bin/sh\n"
       }
     ]

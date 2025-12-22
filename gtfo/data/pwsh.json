@@ -2,19 +2,19 @@
   "functions": {
     "shell": [
       {
-        "description": "",
+        
         "code": "pwsh\n"
       }
     ],
     "file-write": [
       {
-        "description": "",
+        
         "code": "export LFILE=file_to_write\npwsh -c '\"DATA\" | Out-File $env:LFILE'\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "sudo pwsh\n"
       }
     ]

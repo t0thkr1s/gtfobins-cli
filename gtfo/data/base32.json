@@ -2,19 +2,19 @@
   "functions": {
     "file-read": [
       {
-        "description": "",
+        
         "code": "LFILE=file_to_read\nbase32 \"$LFILE\" | base32 --decode\n"
       }
     ],
     "suid": [
       {
-        "description": "",
+        
         "code": "LFILE=file_to_read\nbase32 \"$LFILE\" | base32 --decode\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "LFILE=file_to_read\nsudo base32 \"$LFILE\" | base32 --decode\n"
       }
     ]

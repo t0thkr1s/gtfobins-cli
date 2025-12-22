@@ -2,25 +2,25 @@
   "functions": {
     "shell": [
       {
-        "description": "",
+        
         "code": "ex\n!/bin/sh\n"
       }
     ],
     "file-write": [
       {
-        "description": "",
+        
         "code": "ex file_to_write\na\nDATA\n.\nw\nq\n"
       }
     ],
     "file-read": [
       {
-        "description": "",
+        
         "code": "ex file_to_read\n,p\nq\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "sudo ex\n!/bin/sh\n"
       }
     ]

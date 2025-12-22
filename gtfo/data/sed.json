@@ -18,19 +18,19 @@
     ],
     "file-write": [
       {
-        "description": "",
+        
         "code": "LFILE=file_to_write\nsed -n \"1s/.*/DATA/w $LFILE\" /etc/hosts\n"
       }
     ],
     "file-read": [
       {
-        "description": "",
+        
         "code": "LFILE=file_to_read\nsed '' \"$LFILE\"\n"
       }
     ],
     "suid": [
       {
-        "description": "",
+        
         "code": "LFILE=file_to_read\n./sed -e '' \"$LFILE\"\n"
       }
     ],

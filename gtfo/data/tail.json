@@ -2,19 +2,19 @@
   "functions": {
     "file-read": [
       {
-        "description": "",
+        
         "code": "LFILE=file_to_read\ntail -c1G \"$LFILE\"\n"
       }
     ],
     "suid": [
       {
-        "description": "",
+        
         "code": "LFILE=file_to_read\n./tail -c1G \"$LFILE\"\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "LFILE=file_to_read\nsudo tail -c1G \"$LFILE\"\n"
       }
     ]

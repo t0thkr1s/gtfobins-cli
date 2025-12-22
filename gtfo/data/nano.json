@@ -2,7 +2,7 @@
   "functions": {
     "shell": [
       {
-        "description": "",
+        
         "code": "nano\n^R^X\nreset; sh 1>&0 2>&0\n"
       },
       {
@@ -12,13 +12,13 @@
     ],
     "file-write": [
       {
-        "description": "",
+        
         "code": "nano file_to_write\nDATA\n^O\n"
       }
     ],
     "file-read": [
       {
-        "description": "",
+        
         "code": "nano file_to_read\n"
       }
     ],
@@ -30,7 +30,7 @@
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "sudo nano\n^R^X\nreset; sh 1>&0 2>&0\n"
       }
     ]

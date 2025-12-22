@@ -2,13 +2,13 @@
   "functions": {
     "shell": [
       {
-        "description": "",
+        
         "code": "/usr/sbin/service ../../bin/sh\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "sudo service ../../bin/sh\n"
       }
     ]

@@ -2,7 +2,7 @@
   "functions": {
     "file-write": [
       {
-        "description": "",
+        
         "code": "LFILE1=file_to_read\nLFILE2=file_to_write\ndos2unix -f -n \"$LFILE1\" \"$LFILE2\"\n"
       }
     ]

@@ -2,13 +2,13 @@
   "functions": {
     "file-read": [
       {
-        "description": "",
+        
         "code": "LFILE=file_to_read\ncheck_memory --extra-opts=@$LFILE\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "LFILE=file_to_read\nsudo check_memory --extra-opts=@$LFILE\n"
       }
     ]

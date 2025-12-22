@@ -2,13 +2,13 @@
   "functions": {
     "shell": [
       {
-        "description": "",
+        
         "code": "task execute /bin/sh\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "sudo task execute /bin/sh\n"
       }
     ]

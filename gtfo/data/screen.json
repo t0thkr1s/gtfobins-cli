@@ -2,7 +2,7 @@
   "functions": {
     "shell": [
       {
-        "description": "",
+        
         "code": "screen\n"
       }
     ],
@@ -18,7 +18,7 @@
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "sudo screen\n"
       }
     ]

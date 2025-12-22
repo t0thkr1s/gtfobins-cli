@@ -2,13 +2,13 @@
   "functions": {
     "shell": [
       {
-        "description": "",
+        
         "code": "script -q /dev/null\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "sudo script -q /dev/null\n"
       }
     ],

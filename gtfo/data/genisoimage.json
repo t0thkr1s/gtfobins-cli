@@ -2,7 +2,7 @@
   "functions": {
     "file-read": [
       {
-        "description": "",
+        
         "code": "LFILE=file_to_read\ngenisoimage -q -o - \"$LFILE\"\n"
       }
     ],
@@ -14,7 +14,7 @@
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "LFILE=file_to_read\nsudo genisoimage -q -o - \"$LFILE\"\n"
       }
     ]

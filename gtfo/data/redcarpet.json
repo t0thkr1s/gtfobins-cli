@@ -2,13 +2,13 @@
   "functions": {
     "file-read": [
       {
-        "description": "",
+        
         "code": "LFILE=file_to_read\nredcarpet \"$LFILE\"\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "LFILE=file_to_read\nsudo redcarpet \"$LFILE\"\n"
       }
     ]

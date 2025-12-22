@@ -8,7 +8,7 @@
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "sudo sg root\n"
       }
     ]

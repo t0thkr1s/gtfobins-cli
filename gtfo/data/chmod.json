@@ -2,13 +2,13 @@
   "functions": {
     "suid": [
       {
-        "description": "",
+        
         "code": "LFILE=file_to_change\n./chmod 6777 $LFILE\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "LFILE=file_to_change\nsudo chmod 6777 $LFILE\n"
       }
     ]

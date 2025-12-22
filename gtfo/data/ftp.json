@@ -2,7 +2,7 @@
   "functions": {
     "shell": [
       {
-        "description": "",
+        
         "code": "ftp\n!/bin/sh\n"
       }
     ],
@@ -20,7 +20,7 @@
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "sudo ftp\n!/bin/sh\n"
       }
     ]

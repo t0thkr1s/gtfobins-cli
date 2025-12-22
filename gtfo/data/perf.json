@@ -2,19 +2,19 @@
   "functions": {
     "shell": [
       {
-        "description": "",
+        
         "code": "perf stat /bin/sh\n"
       }
     ],
     "suid": [
       {
-        "description": "",
+        
         "code": "./perf stat /bin/sh -p\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "sudo perf stat /bin/sh\n"
       }
     ]

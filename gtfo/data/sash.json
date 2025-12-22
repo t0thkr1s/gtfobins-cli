@@ -2,19 +2,19 @@
   "functions": {
     "shell": [
       {
-        "description": "",
+        
         "code": "sash\n"
       }
     ],
     "suid": [
       {
-        "description": "",
+        
         "code": "./sash\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "sudo sash\n"
       }
     ]

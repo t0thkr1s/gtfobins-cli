@@ -2,13 +2,13 @@
   "functions": {
     "file-read": [
       {
-        "description": "",
+        
         "code": "LFILE=file_to_read\nip -force -batch \"$LFILE\"\n"
       }
     ],
     "suid": [
       {
-        "description": "",
+        
         "code": "LFILE=file_to_read\n./ip -force -batch \"$LFILE\"\n"
       },
       {
@@ -18,7 +18,7 @@
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "LFILE=file_to_read\nsudo ip -force -batch \"$LFILE\"\n"
       },
       {

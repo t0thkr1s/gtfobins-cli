@@ -2,13 +2,13 @@
   "functions": {
     "suid": [
       {
-        "description": "",
+        
         "code": "LFILE=file_to_change\nUSER=somebody\n./setfacl -m u:$USER:rwx $LFILE\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "LFILE=file_to_change\nUSER=somebody\nsudo setfacl -m -u:$USER:rwx $LFILE\n"
       }
     ]

@@ -2,7 +2,7 @@
   "functions": {
     "shell": [
       {
-        "description": "",
+        
         "code": "gdb -nx -ex '!sh' -ex quit\n"
       }
     ],
@@ -54,7 +54,7 @@
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "sudo gdb -nx -ex '!sh' -ex quit\n"
       }
     ],

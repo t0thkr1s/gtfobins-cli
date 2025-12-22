@@ -2,13 +2,13 @@
   "functions": {
     "shell": [
       {
-        "description": "",
+        
         "code": "ghci\nSystem.Process.callCommand \"/bin/sh\"\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "sudo ghci\nSystem.Process.callCommand \"/bin/sh\"\n"
       }
     ]

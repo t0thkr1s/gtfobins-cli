@@ -2,19 +2,19 @@
   "functions": {
     "file-read": [
       {
-        "description": "",
+        
         "code": "LFILE=file_to_read\nbasenc --base64 $LFILE | basenc -d --base64\n"
       }
     ],
     "suid": [
       {
-        "description": "",
+        
         "code": "LFILE=file_to_read\nbasenc --base64 $LFILE | basenc -d --base64\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "LFILE=file_to_read\nsudo basenc --base64 $LFILE | basenc -d --base64\n"
       }
     ]

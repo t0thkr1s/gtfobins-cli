@@ -2,13 +2,13 @@
   "functions": {
     "sudo": [
       {
-        "description": "",
+        
         "code": "sudo unsquashfs shell\n./squashfs-root/sh -p\n"
       }
     ],
     "suid": [
       {
-        "description": "",
+        
         "code": "./unsquashfs shell\n./squashfs-root/sh -p\n"
       }
     ]

@@ -2,19 +2,19 @@
   "functions": {
     "file-read": [
       {
-        "description": "",
+        
         "code": "terraform console\nfile(\"file_to_read\")\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "sudo terraform console\nfile(\"file_to_read\")\n"
       }
     ],
     "suid": [
       {
-        "description": "",
+        
         "code": "./terraform console\nfile(\"file_to_read\")\n"
       }
     ]

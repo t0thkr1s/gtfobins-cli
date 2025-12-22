@@ -2,7 +2,7 @@
   "functions": {
     "file-read": [
       {
-        "description": "",
+        
         "code": "LFILE=file_to_read\ncsplit $LFILE 1\ncat xx01\n"
       }
     ],
@@ -14,13 +14,13 @@
     ],
     "suid": [
       {
-        "description": "",
+        
         "code": "LFILE=file_to_read\ncsplit $LFILE 1\ncat xx01\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "LFILE=file_to_read\ncsplit $LFILE 1\ncat xx01\n"
       }
     ]

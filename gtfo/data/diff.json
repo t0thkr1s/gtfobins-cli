@@ -2,7 +2,7 @@
   "functions": {
     "file-read": [
       {
-        "description": "",
+        
         "code": "LFILE=file_to_read\ndiff --line-format=%L /dev/null $LFILE\n"
       },
       {
@@ -12,13 +12,13 @@
     ],
     "suid": [
       {
-        "description": "",
+        
         "code": "LFILE=file_to_read\n./diff --line-format=%L /dev/null $LFILE\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "LFILE=file_to_read\nsudo diff --line-format=%L /dev/null $LFILE\n"
       }
     ]

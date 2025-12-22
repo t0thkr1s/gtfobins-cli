@@ -2,13 +2,13 @@
   "functions": {
     "file-read": [
       {
-        "description": "",
+        
         "code": "LFILE=file_to_read\nascii85 \"$LFILE\" | ascii85 --decode\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "LFILE=file_to_read\nsudo ascii85 \"$LFILE\" | ascii85 --decode\n"
       }
     ]

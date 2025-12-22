@@ -2,7 +2,7 @@
   "functions": {
     "shell": [
       {
-        "description": "",
+        
         "code": "man man\n!/bin/sh\n"
       },
       {
@@ -12,13 +12,13 @@
     ],
     "file-read": [
       {
-        "description": "",
+        
         "code": "man file_to_read\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "sudo man man\n!/bin/sh\n"
       }
     ]

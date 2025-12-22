@@ -2,25 +2,25 @@
   "functions": {
     "shell": [
       {
-        "description": "",
+        
         "code": "pg /etc/profile\n!/bin/sh\n"
       }
     ],
     "file-read": [
       {
-        "description": "",
+        
         "code": "pg file_to_read\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "sudo pg /etc/profile\n!/bin/sh\n"
       }
     ],
     "suid": [
       {
-        "description": "",
+        
         "code": "./pg file_to_read\n"
       }
     ]

@@ -2,13 +2,13 @@
   "functions": {
     "shell": [
       {
-        "description": "",
+        
         "code": "ansible-test shell\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "sudo ansible-test shell\n"
       }
     ]

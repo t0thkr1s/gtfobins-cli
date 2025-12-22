@@ -2,19 +2,19 @@
   "functions": {
     "shell": [
       {
-        "description": "",
+        
         "code": "flock -u / /bin/sh\n"
       }
     ],
     "suid": [
       {
-        "description": "",
+        
         "code": "./flock -u / /bin/sh -p\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "sudo flock -u / /bin/sh\n"
       }
     ]

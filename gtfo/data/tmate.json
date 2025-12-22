@@ -2,19 +2,19 @@
   "functions": {
     "shell": [
       {
-        "description": "",
+        
         "code": "tmate -c /bin/sh\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "sudo tmate -c /bin/sh\n"
       }
     ],
     "limited-suid": [
       {
-        "description": "",
+        
         "code": "./tmate -c /bin/sh\n"
       }
     ]

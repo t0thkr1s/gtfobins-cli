@@ -2,19 +2,19 @@
   "functions": {
     "shell": [
       {
-        "description": "",
+        
         "code": "sshpass /bin/sh\n"
       }
     ],
     "suid": [
       {
-        "description": "",
+        
         "code": "./sshpass /bin/sh -p\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "sudo sshpass /bin/sh\n"
       }
     ]

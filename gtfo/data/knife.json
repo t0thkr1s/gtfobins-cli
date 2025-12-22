@@ -2,13 +2,13 @@
   "functions": {
     "shell": [
       {
-        "description": "",
+        
         "code": "knife exec -E 'exec \"/bin/sh\"'\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "sudo knife exec -E 'exec \"/bin/sh\"'\n"
       }
     ]

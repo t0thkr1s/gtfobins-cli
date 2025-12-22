@@ -2,19 +2,19 @@
   "functions": {
     "file-read": [
       {
-        "description": "",
+        
         "code": "LFILE=file_to_read\ncp \"$LFILE\" /dev/stdout\n"
       }
     ],
     "file-write": [
       {
-        "description": "",
+        
         "code": "LFILE=file_to_write\necho \"DATA\" | cp /dev/stdin \"$LFILE\"\n"
       }
     ],
     "suid": [
       {
-        "description": "",
+        
         "code": "LFILE=file_to_write\necho \"DATA\" | ./cp /dev/stdin \"$LFILE\"\n"
       },
       {
@@ -28,7 +28,7 @@
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "LFILE=file_to_write\necho \"DATA\" | sudo cp /dev/stdin \"$LFILE\"\n"
       },
       {

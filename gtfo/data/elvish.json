@@ -2,31 +2,31 @@
   "functions": {
     "file-read": [
       {
-        "description": "",
+        
         "code": "export LFILE=file_to_read\nelvish -c 'echo (slurp <$E:LFILE)'\n"
       }
     ],
     "file-write": [
       {
-        "description": "",
+        
         "code": "export LFILE=file_to_write\nelvish -c 'echo DATA >$E:LFILE'\n"
       }
     ],
     "shell": [
       {
-        "description": "",
+        
         "code": "elvish\n"
       }
     ],
     "suid": [
       {
-        "description": "",
+        
         "code": "./elvish\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "sudo elvish\n"
       }
     ]

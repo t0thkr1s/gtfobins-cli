@@ -2,19 +2,19 @@
   "functions": {
     "shell": [
       {
-        "description": "",
+        
         "code": "multitime /bin/sh\n"
       }
     ],
     "suid": [
       {
-        "description": "",
+        
         "code": "./multitime /bin/sh -p\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "sudo multitime /bin/sh\n"
       }
     ]

@@ -14,13 +14,13 @@
     ],
     "shell": [
       {
-        "description": "",
+        
         "code": "ltrace -b -L /bin/sh\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "sudo ltrace -b -L /bin/sh\n"
       }
     ]

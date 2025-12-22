@@ -2,19 +2,19 @@
   "functions": {
     "shell": [
       {
-        "description": "",
+        
         "code": "posh\n"
       }
     ],
     "limited-suid": [
       {
-        "description": "",
+        
         "code": "./posh\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "sudo posh\n"
       }
     ]

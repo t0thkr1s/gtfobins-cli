@@ -2,19 +2,19 @@
   "functions": {
     "shell": [
       {
-        "description": "",
+        
         "code": "slsh -e 'system(\"/bin/sh\")'\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "sudo slsh -e 'system(\"/bin/sh\")'\n"
       }
     ],
     "limited-suid": [
       {
-        "description": "",
+        
         "code": "./slsh -e 'system(\"/bin/sh\")'\n"
       }
     ]

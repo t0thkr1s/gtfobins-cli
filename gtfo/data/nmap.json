@@ -44,7 +44,7 @@
     ],
     "file-write": [
       {
-        "description": "",
+        
         "code": "TF=$(mktemp)\necho 'local f=io.open(\"file_to_write\", \"wb\"); f:write(\"data\"); io.close(f);' > $TF\nnmap --script=$TF\n"
       },
       {
@@ -54,7 +54,7 @@
     ],
     "file-read": [
       {
-        "description": "",
+        
         "code": "TF=$(mktemp)\necho 'local f=io.open(\"file_to_read\", \"rb\"); print(f:read(\"*a\")); io.close(f);' > $TF\nnmap --script=$TF\n"
       },
       {

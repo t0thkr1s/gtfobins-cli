@@ -2,19 +2,19 @@
   "functions": {
     "shell": [
       {
-        "description": "",
+        
         "code": "distcc /bin/sh\n"
       }
     ],
     "suid": [
       {
-        "description": "",
+        
         "code": "./distcc /bin/sh -p\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "sudo distcc /bin/sh\n"
       }
     ]

@@ -2,19 +2,19 @@
   "functions": {
     "shell": [
       {
-        "description": "",
+        
         "code": "softlimit /bin/sh\n"
       }
     ],
     "suid": [
       {
-        "description": "",
+        
         "code": "./softlimit /bin/sh -p\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "sudo softlimit /bin/sh\n"
       }
     ]

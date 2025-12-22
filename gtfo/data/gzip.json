@@ -2,23 +2,23 @@
   "functions": {
     "file-read": [
       {
-        "description": "",
+        
         "code": "LFILE=file_to_read\ngzip -f $LFILE -t\n"
       },
       {
-        "description": "",
+        
         "code": "LFILE=file_to_read\ngzip -c $LFILE | gzip -d\n"
       }
     ],
     "suid": [
       {
-        "description": "",
+        
         "code": "LFILE=file_to_read\n./gzip -f $LFILE -t\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "LFILE=file_to_read\nsudo gzip -f $LFILE -t\n"
       }
     ]

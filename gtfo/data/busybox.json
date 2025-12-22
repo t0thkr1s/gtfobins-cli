@@ -2,7 +2,7 @@
   "functions": {
     "shell": [
       {
-        "description": "",
+        
         "code": "busybox sh\n"
       }
     ],
@@ -14,13 +14,13 @@
     ],
     "file-write": [
       {
-        "description": "",
+        
         "code": "LFILE=file_to_write\nbusybox sh -c 'echo \"DATA\" > $LFILE'\n"
       }
     ],
     "file-read": [
       {
-        "description": "",
+        
         "code": "LFILE=file_to_read\n./busybox cat \"$LFILE\"\n"
       }
     ],
@@ -32,7 +32,7 @@
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "sudo busybox sh\n"
       }
     ],

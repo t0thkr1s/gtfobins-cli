@@ -2,7 +2,7 @@
   "functions": {
     "file-read": [
       {
-        "description": "",
+        
         "code": "LFILE=file_to_read\ngcc -x c -E \"$LFILE\"\n"
       },
       {
@@ -12,19 +12,19 @@
     ],
     "file-write": [
       {
-        "description": "",
+        
         "code": "LFILE=file_to_delete\ngcc -xc /dev/null -o $LFILE\n"
       }
     ],
     "shell": [
       {
-        "description": "",
+        
         "code": "gcc -wrapper /bin/sh,-s .\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "sudo gcc -wrapper /bin/sh,-s .\n"
       }
     ]

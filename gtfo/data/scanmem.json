@@ -2,19 +2,19 @@
   "functions": {
     "shell": [
       {
-        "description": "",
+        
         "code": "scanmem\nshell /bin/sh\n"
       }
     ],
     "suid": [
       {
-        "description": "",
+        
         "code": "./scanmem\nshell /bin/sh\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "sudo scanmem\nshell /bin/sh\n"
       }
     ]

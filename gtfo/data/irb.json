@@ -2,7 +2,7 @@
   "functions": {
     "shell": [
       {
-        "description": "",
+        
         "code": "irb\nexec '/bin/bash'\n"
       }
     ],
@@ -26,25 +26,25 @@
     ],
     "file-write": [
       {
-        "description": "",
+        
         "code": "irb\nFile.open(\"file_to_write\", \"w+\") { |f| f.write(\"DATA\") }\n"
       }
     ],
     "file-read": [
       {
-        "description": "",
+        
         "code": "irb\nputs File.read(\"file_to_read\")\n"
       }
     ],
     "library-load": [
       {
-        "description": "",
+        
         "code": "irb\nrequire \"fiddle\"; Fiddle.dlopen(\"lib.so\")\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "sudo irb\nexec '/bin/bash'\n"
       }
     ]

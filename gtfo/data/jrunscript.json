@@ -2,7 +2,7 @@
   "functions": {
     "shell": [
       {
-        "description": "",
+        
         "code": "jrunscript -e \"exec('/bin/sh -c \\$@|sh _ echo sh <$(tty) >$(tty) 2>$(tty)')\"\n"
       }
     ],
@@ -20,13 +20,13 @@
     ],
     "file-write": [
       {
-        "description": "",
+        
         "code": "jrunscript -e 'var fw=new java.io.FileWriter(\"./file_to_write\"); fw.write(\"DATA\"); fw.close();'\n"
       }
     ],
     "file-read": [
       {
-        "description": "",
+        
         "code": "jrunscript -e 'br = new BufferedReader(new java.io.FileReader(\"file_to_read\")); while ((line = br.readLine()) != null) { print(line); }'\n"
       }
     ],
@@ -38,7 +38,7 @@
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "sudo jrunscript -e \"exec('/bin/sh -c \\$@|sh _ echo sh <$(tty) >$(tty) 2>$(tty)')\"\n"
       }
     ]

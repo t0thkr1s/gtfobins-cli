@@ -6,11 +6,11 @@
         "code": "bundle help\n!/bin/sh\n"
       },
       {
-        "description": "",
+        
         "code": "export BUNDLE_GEMFILE=x\nbundle exec /bin/sh\n"
       },
       {
-        "description": "",
+        
         "code": "TF=$(mktemp -d)\ntouch $TF/Gemfile\ncd $TF\nbundle exec /bin/sh\n"
       },
       {
@@ -18,7 +18,7 @@
         "code": "TF=$(mktemp -d)\ntouch $TF/Gemfile\ncd $TF\nbundle console\nsystem('/bin/sh -c /bin/sh')\n"
       },
       {
-        "description": "",
+        
         "code": "TF=$(mktemp -d)\necho 'system(\"/bin/sh\")' > $TF/Gemfile\ncd $TF\nbundle install\n"
       }
     ],

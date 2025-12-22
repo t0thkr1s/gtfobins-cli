@@ -2,7 +2,7 @@
   "functions": {
     "file-read": [
       {
-        "description": "",
+        
         "code": "LFILE=file_to_read\nTF=$(mktemp)\nsplit $LFILE $TF\ncat $TF*\n"
       }
     ],

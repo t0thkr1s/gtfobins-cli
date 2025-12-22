@@ -2,11 +2,11 @@
   "functions": {
     "shell": [
       {
-        "description": "",
+        
         "code": "view -c ':!/bin/sh'\n"
       },
       {
-        "description": "",
+        
         "code": "view\n:set shell=/bin/sh\n:shell\n"
       },
       {
@@ -62,13 +62,13 @@
     ],
     "file-write": [
       {
-        "description": "",
+        
         "code": "view file_to_write\niDATA\n^[\nw!\n"
       }
     ],
     "file-read": [
       {
-        "description": "",
+        
         "code": "view file_to_read\n"
       }
     ],
@@ -86,7 +86,7 @@
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "sudo view -c ':!/bin/sh'\n"
       },
       {

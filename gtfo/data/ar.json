@@ -2,19 +2,19 @@
   "functions": {
     "file-read": [
       {
-        "description": "",
+        
         "code": "TF=$(mktemp -u)\nLFILE=file_to_read\nar r \"$TF\" \"$LFILE\"\ncat \"$TF\"\n"
       }
     ],
     "suid": [
       {
-        "description": "",
+        
         "code": "TF=$(mktemp -u)\nLFILE=file_to_read\n./ar r \"$TF\" \"$LFILE\"\ncat \"$TF\"\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "TF=$(mktemp -u)\nLFILE=file_to_read\nsudo ar r \"$TF\" \"$LFILE\"\ncat \"$TF\"\n"
       }
     ]

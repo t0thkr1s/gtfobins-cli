@@ -8,19 +8,19 @@
     ],
     "shell": [
       {
-        "description": "",
+        
         "code": "strace -o /dev/null /bin/sh\n"
       }
     ],
     "suid": [
       {
-        "description": "",
+        
         "code": "./strace -o /dev/null /bin/sh -p\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "sudo strace -o /dev/null /bin/sh\n"
       }
     ]

@@ -2,19 +2,19 @@
   "functions": {
     "shell": [
       {
-        "description": "",
+        
         "code": "/usr/bin/time /bin/sh\n"
       }
     ],
     "suid": [
       {
-        "description": "",
+        
         "code": "./time /bin/sh -p\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "sudo /usr/bin/time /bin/sh\n"
       }
     ]

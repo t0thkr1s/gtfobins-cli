@@ -2,31 +2,31 @@
   "functions": {
     "file-read": [
       {
-        "description": "",
+        
         "code": "export LFILE=file_to_read\nzsh -c 'echo \"$(<$LFILE)\"'\n"
       }
     ],
     "file-write": [
       {
-        "description": "",
+        
         "code": "export LFILE=file_to_write\nzsh -c 'echo DATA >$LFILE'\n"
       }
     ],
     "shell": [
       {
-        "description": "",
+        
         "code": "zsh\n"
       }
     ],
     "suid": [
       {
-        "description": "",
+        
         "code": "./zsh\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "sudo zsh\n"
       }
     ]

@@ -2,19 +2,19 @@
   "functions": {
     "file-read": [
       {
-        "description": "",
+        
         "code": "LFILE=file_to_read\nOUTPUT=output_file\nexiftool -filename=$OUTPUT $LFILE\ncat $OUTPUT\n"
       }
     ],
     "file-write": [
       {
-        "description": "",
+        
         "code": "LFILE=file_to_write\nINPUT=input_file\nexiftool -filename=$LFILE $INPUT\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "LFILE=file_to_write\nINPUT=input_file\nsudo exiftool -filename=$LFILE $INPUT\n"
       }
     ]

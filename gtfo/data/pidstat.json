@@ -2,19 +2,19 @@
   "functions": {
     "command": [
       {
-        "description": "",
+        
         "code": "COMMAND=id\npidstat -e $COMMAND\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "COMMAND=id\nsudo pidstat -e $COMMAND\n"
       }
     ],
     "suid": [
       {
-        "description": "",
+        
         "code": "COMMAND=id\n./pidstat -e $COMMAND\n"
       }
     ]

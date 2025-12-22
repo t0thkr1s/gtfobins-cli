@@ -2,7 +2,7 @@
   "functions": {
     "shell": [
       {
-        "description": "",
+        
         "code": "ksh\n"
       }
     ],
@@ -34,7 +34,7 @@
     ],
     "file-write": [
       {
-        "description": "",
+        
         "code": "export LFILE=file_to_write\nksh -c 'echo DATA > $LFILE'\n"
       }
     ],
@@ -50,13 +50,13 @@
     ],
     "suid": [
       {
-        "description": "",
+        
         "code": "./ksh -p\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "sudo ksh\n"
       }
     ]

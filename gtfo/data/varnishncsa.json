@@ -2,13 +2,13 @@
   "functions": {
     "sudo": [
       {
-        "description": "",
+        
         "code": "LFILE=file_to_write\nsudo varnishncsa -g request -q 'ReqURL ~ \"/xxx\"' -F '%{yyy}i' -w \"$LFILE\"\n"
       }
     ],
     "suid": [
       {
-        "description": "",
+        
         "code": "LFILE=file_to_write\n./varnishncsa -g request -q 'ReqURL ~ \"/xxx\"' -F '%{yyy}i' -w \"$LFILE\"\n"
       }
     ]

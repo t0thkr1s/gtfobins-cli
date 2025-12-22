@@ -2,7 +2,7 @@
   "functions": {
     "shell": [
       {
-        "description": "",
+        
         "code": "bash\n"
       }
     ],
@@ -34,7 +34,7 @@
     ],
     "file-write": [
       {
-        "description": "",
+        
         "code": "export LFILE=file_to_write\nbash -c 'echo DATA > $LFILE'\n"
       },
       {
@@ -54,19 +54,19 @@
     ],
     "library-load": [
       {
-        "description": "",
+        
         "code": "bash -c 'enable -f ./lib.so x'\n"
       }
     ],
     "suid": [
       {
-        "description": "",
+        
         "code": "./bash -p\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "sudo bash\n"
       }
     ]

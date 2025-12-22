@@ -2,37 +2,37 @@
   "functions": {
     "shell": [
       {
-        "description": "",
+        
         "code": "ed\n!/bin/sh\n"
       }
     ],
     "file-write": [
       {
-        "description": "",
+        
         "code": "ed file_to_write\na\nDATA\n.\nw\nq\n"
       }
     ],
     "file-read": [
       {
-        "description": "",
+        
         "code": "ed file_to_read\n,p\nq\n"
       }
     ],
     "suid": [
       {
-        "description": "",
+        
         "code": "./ed file_to_read\n,p\nq\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "sudo ed\n!/bin/sh\n"
       }
     ],
     "limited-suid": [
       {
-        "description": "",
+        
         "code": "./ed\n!/bin/sh\n"
       }
     ]

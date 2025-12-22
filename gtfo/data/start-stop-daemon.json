@@ -2,19 +2,19 @@
   "functions": {
     "shell": [
       {
-        "description": "",
+        
         "code": "start-stop-daemon -n $RANDOM -S -x /bin/sh\n"
       }
     ],
     "suid": [
       {
-        "description": "",
+        
         "code": "./start-stop-daemon -n $RANDOM -S -x /bin/sh -- -p\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "sudo start-stop-daemon -n $RANDOM -S -x /bin/sh\n"
       }
     ]

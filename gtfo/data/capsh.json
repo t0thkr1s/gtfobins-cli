@@ -2,19 +2,19 @@
   "functions": {
     "shell": [
       {
-        "description": "",
+        
         "code": "capsh --\n"
       }
     ],
     "suid": [
       {
-        "description": "",
+        
         "code": "./capsh --gid=0 --uid=0 --\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "sudo capsh --\n"
       }
     ]

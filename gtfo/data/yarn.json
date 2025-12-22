@@ -2,7 +2,7 @@
   "functions": {
     "shell": [
       {
-        "description": "",
+        
         "code": "yarn exec /bin/sh\n"
       },
       {
@@ -12,7 +12,7 @@
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "sudo yarn exec /bin/sh\n"
       }
     ]

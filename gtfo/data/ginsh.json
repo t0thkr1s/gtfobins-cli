@@ -2,19 +2,19 @@
   "functions": {
     "shell": [
       {
-        "description": "",
+        
         "code": "ginsh\n!/bin/sh\n"
       }
     ],
     "limited-suid": [
       {
-        "description": "",
+        
         "code": "./ginsh\n!/bin/sh\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "sudo ginsh\n!/bin/sh\n"
       }
     ]

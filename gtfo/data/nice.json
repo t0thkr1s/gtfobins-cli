@@ -2,19 +2,19 @@
   "functions": {
     "shell": [
       {
-        "description": "",
+        
         "code": "nice /bin/sh\n"
       }
     ],
     "suid": [
       {
-        "description": "",
+        
         "code": "./nice /bin/sh -p\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "sudo nice /bin/sh\n"
       }
     ]

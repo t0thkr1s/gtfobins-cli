@@ -2,13 +2,13 @@
   "functions": {
     "suid": [
       {
-        "description": "",
+        
         "code": "LFILE=file_to_change\n./chown $(id -un):$(id -gn) $LFILE\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "LFILE=file_to_change\nsudo chown $(id -un):$(id -gn) $LFILE\n"
       }
     ]

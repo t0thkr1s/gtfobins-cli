@@ -2,7 +2,7 @@
   "functions": {
     "shell": [
       {
-        "description": "",
+        
         "code": "wish\nexec /bin/sh <@stdin >@stdout 2>@stderr\n"
       }
     ],
@@ -14,7 +14,7 @@
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "sudo wish\nexec /bin/sh <@stdin >@stdout 2>@stderr\n"
       }
     ]

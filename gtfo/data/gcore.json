@@ -2,19 +2,19 @@
   "functions": {
     "file-read": [
       {
-        "description": "",
+        
         "code": "gcore $PID\n"
       }
     ],
     "sudo": [
       {
-        "description": "",
+        
         "code": "sudo gcore $PID\n"
       }
     ],
     "suid": [
       {
-        "description": "",
+        
         "code": "./gcore $PID\n"
       }
     ]
