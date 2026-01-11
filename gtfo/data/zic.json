@@ -5,17 +5,17 @@
         "description": "This executes system(''id' 0 'arg2''), and system(''id' 1 'arg2'').\nYou can also pass negative numbers, so the resulting command would look like system(''id' -1 'arg2'')."
       },
       {
-        "code": "echo \"Rule Jordan 0 1 arg2 Jan lastSun 2 1:00d -\" > zicfile\necho \"Zone Test 2:00 Jordan CE%sT\" >> zicfile\nzic -d . -y \"id\" ./zicfile"
+        "code": "echo \"Rule    Jordan  0     1     arg2              Jan     lastSun       2       1:00d   -\" > zicfile\necho \"Zone    Test    2:00    Jordan  CE%sT\" >> zicfile\nzic -d . -y \"id\" ./zicfile"
       }
     ],
     "sudo": [
       {
-        "code": "echo \"Rule Jordan 0 1 arg2 Jan lastSun 2 1:00d -\" > zicfile\necho \"Zone Test 2:00 Jordan CE%sT\" >> zicfile\nzic -d . -y \"id\" ./zicfile"
+        "code": "echo \"Rule    Jordan  0     1     arg2              Jan     lastSun       2       1:00d   -\" > zicfile\necho \"Zone    Test    2:00    Jordan  CE%sT\" >> zicfile\nzic -d . -y \"id\" ./zicfile"
       }
     ],
     "shell": [
       {
-        "code": "echo \"Rule Jordan 0 1 arg2 Jan lastSun 2 1:00d -\" > zicfile\necho \"Zone Test 2:00 Jordan CE%sT\" >> zicfile\nzic -d . -y \"vi\" ./zicfile\n:!/bin/bash"
+        "code": "echo \"Rule    Jordan  0     1     arg2              Jan     lastSun       2       1:00d   -\" > zicfile\necho \"Zone    Test    2:00    Jordan  CE%sT\" >> zicfile\nzic -d . -y \"vi\" ./zicfile\n:!/bin/bash"
       }
     ]
   }
