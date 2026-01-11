@@ -1,0 +1,16 @@
+{
+  "functions": {
+    "shell": [
+      {
+        "description": "",
+        "code": "hg --config alias.root='!sh' root\n"
+      }
+    ],
+    "sudo": [
+      {
+        "description": "",
+        "code": "sudo hg --config alias.root='!sh' root\n"
+      }
+    ]
+  }
+}

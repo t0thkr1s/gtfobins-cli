@@ -1,0 +1,28 @@
+{
+  "functions": {
+    "shell": [
+      {
+        "description": "",
+        "code": "chrt 26 /bin/sh\n"
+      }
+    ],
+    "command": [
+      {
+        "description": "",
+        "code": "COMMAND='/usr/bin/id'\nchrt 26 \"$COMMAND\"\n"
+      }
+    ],
+    "suid": [
+      {
+        "description": "",
+        "code": "./chrt 26 sh -p -c 'reset; exec sh -p 1>&0 2>&0'\n"
+      }
+    ],
+    "sudo": [
+      {
+        "description": "",
+        "code": "sudo chrt 26 /bin/sh\n"
+      }
+    ]
+  }
+}

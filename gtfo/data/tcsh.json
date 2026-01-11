@@ -1,0 +1,28 @@
+{
+  "functions": {
+    "shell": [
+      {
+        "description": "",
+        "code": "tcsh\n"
+      }
+    ],
+    "file-write": [
+      {
+        "description": "",
+        "code": "export LFILE=file_to_write\ntcsh -c 'echo DATA > $LFILE'\n"
+      }
+    ],
+    "suid": [
+      {
+        "description": "",
+        "code": "./tcsh -b\n"
+      }
+    ],
+    "sudo": [
+      {
+        "description": "",
+        "code": "sudo tcsh\n"
+      }
+    ]
+  }
+}

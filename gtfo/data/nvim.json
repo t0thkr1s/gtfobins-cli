@@ -1,0 +1,16 @@
+{
+  "functions": {
+    "command": [
+      {
+        "description": "",
+        "code": "COMMAND=id\nnvim -c ':!'$COMMAND\n"
+      }
+    ],
+    "sudo": [
+      {
+        "description": "",
+        "code": "sudo nvim -c ':terminal'\n"
+      }
+    ]
+  }
+}

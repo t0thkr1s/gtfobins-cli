@@ -1,0 +1,16 @@
+{
+  "functions": {
+    "shell": [
+      {
+        "description": "",
+        "code": "borg extract @:/:::  --rsh \"sh -c 'sh </dev/tty >/dev/tty 2>/dev/tty'\"\n"
+      }
+    ],
+    "sudo": [
+      {
+        "description": "",
+        "code": "sudo borg extract @:/:::  --rsh \"sh -c 'sh </dev/tty >/dev/tty 2>/dev/tty'\"\n"
+      }
+    ]
+  }
+}

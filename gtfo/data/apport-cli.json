@@ -1,0 +1,22 @@
+{
+  "functions": {
+    "shell": [
+      {
+        "description": "",
+        "code": "apport-cli -f\n\n*** What kind of problem do you want to report?\n<SNIP>\nPlease choose (1/2/3/4/5/6/7/8/9/10/C): 1\n\n*** Collecting problem information\n<SNIP>\n\n*** What display problem do you observe?\n<SNIP>\n\nPlease choose (1/2/3/4/5/6/7/8/C): 2\n<SNIP>\n\n*** Send problem report to the developers?\n<SNIP>\nWhat would you like to do? Your options are:\n    <SNIP>\n    V: View report\n    <SNIP>\nPlease choose (S/V/K/I/C): V\n\n<AT THIS POINT, DEFAULT CLI TEXT EDITOR IS OPENED. FROM HERE, SHELL ESCAPE AND/OR PRIVIEDGED R/W DEPENDS UPON THE EDITOR>\n"
+      }
+    ],
+    "suid": [
+      {
+        "description": "",
+        "code": "apport-cli -f\n\n*** What kind of problem do you want to report?\n<SNIP>\nPlease choose (1/2/3/4/5/6/7/8/9/10/C): 1\n\n*** Collecting problem information\n<SNIP>\n\n*** What display problem do you observe?\n<SNIP>\n\nPlease choose (1/2/3/4/5/6/7/8/C): 2\n<SNIP>\n\n*** Send problem report to the developers?\n<SNIP>\nWhat would you like to do? Your options are:\n    <SNIP>\n    V: View report\n    <SNIP>\nPlease choose (S/V/K/I/C): V\n\n<AT THIS POINT, DEFAULT CLI TEXT EDITOR IS OPENED. FROM HERE, SHELL ESCAPE AND/OR PRIVIEDGED R/W DEPENDS UPON THE EDITOR>\n"
+      }
+    ],
+    "sudo": [
+      {
+        "description": "",
+        "code": "sudo apport-cli -f\n\n*** What kind of problem do you want to report?\n<SNIP>\nPlease choose (1/2/3/4/5/6/7/8/9/10/C): 1\n\n*** Collecting problem information\n<SNIP>\n\n*** What display problem do you observe?\n<SNIP>\n\nPlease choose (1/2/3/4/5/6/7/8/C): 2\n<SNIP>\n\n*** Send problem report to the developers?\n<SNIP>\nWhat would you like to do? Your options are:\n    <SNIP>\n    V: View report\n    <SNIP>\nPlease choose (S/V/K/I/C): V\n\n<AT THIS POINT, DEFAULT CLI TEXT EDITOR IS OPENED. FROM HERE, SHELL ESCAPE AND/OR PRIVIEDGED R/W DEPENDS UPON THE EDITOR>\n"
+      }
+    ]
+  }
+}

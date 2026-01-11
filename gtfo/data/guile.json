@@ -1,0 +1,16 @@
+{
+  "functions": {
+    "shell": [
+      {
+        "description": "",
+        "code": "guile -c '(system \"sh\")'\n"
+      }
+    ],
+    "sudo": [
+      {
+        "description": "",
+        "code": "sudo guile -c '(system \"sh\")'\n"
+      }
+    ]
+  }
+}

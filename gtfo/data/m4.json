@@ -1,0 +1,22 @@
+{
+  "functions": {
+    "file-read": [
+      {
+        "description": "",
+        "code": "LFILE=file_to_read\nm4 \"$LFILE\"\n"
+      }
+    ],
+    "suid": [
+      {
+        "description": "",
+        "code": "LFILE=file_to_read\n./m4 \"$LFILE\"\n"
+      }
+    ],
+    "sudo": [
+      {
+        "description": "",
+        "code": "LFILE=file_to_read\nsudo m4 \"$LFILE\"\n"
+      }
+    ]
+  }
+}

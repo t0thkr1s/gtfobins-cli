@@ -1,0 +1,10 @@
+{
+  "functions": {
+    "sudo": [
+      {
+        "description": "To achieve code execution, it is required that `plymouthd` is already running as root or can be started as root (with sudo\nor equivalent). It is also required to have tty access to input characters such as keyboard access to the machine. It is\nusually best to save the following code snipet to a script (e.g. `priv-esc.sh`) and execute that as the first command\nwill take over the TTY and you will loose terminal access (if executed from the same TTY) until `hide-splash`.\n\n`show-splash` is used to take control over the TTY and display the splash screen. `pause-progress` is used to prevent\nplymouth from automatically quiting in some cases as we are already booted. `ask-for-password` will ask the user for a\ntext password (usually to decrypt a LUKS disk encryption). We can tell plymouth to send this input to any program, such\nas `/bin/sh` to execute whatever input we gave. Then run `hide-splash` to hide the splash screen and return to normal.\n",
+        "code": "sudo plymouth show-splash\nsudo plymouth pause-progress\nsudo plymouth ask-for-password --prompt='Execute root command:' --command=/bin/sh\nsudo plymouth hide-splash\n"
+      }
+    ]
+  }
+}

