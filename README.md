@@ -112,10 +112,18 @@ The tool provides information about various exploitation techniques:
 ## Screenshots
 
 <p align="center">
-  <img src="https://i.imgur.com/1EzFiGQ.png" width="45%" alt="GTFOBins CLI Screenshot 1">
-  &nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="https://i.imgur.com/icgmDct.png" width="45%" alt="GTFOBins CLI Screenshot 2">
+  <img src="gtfo/images/sqlit3.png" width="45%">
+  <img src="gtfo/images/search-interactive.png" width="45%">
 </p>
+<p align="center">
+  <img src="gtfo/images/filter-with.png" width="45%">
+  <img src="gtfo/images/search-for.png" width="45%">
+</p>
+<p align="center">
+  <img src="gtfo/images/search-docker.png" width="45%">
+</p>
+
+
 
 ## Development
 
