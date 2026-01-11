@@ -15,6 +15,9 @@
 ### Key Features
 
 - 🔍 **Quick Binary Lookup**: Search exploitation techniques for any Unix binary
+- 🔎 **Fuzzy Search**: Find binaries with partial name matching
+- 🏷️ **Filter by Type**: Filter binaries by exploitation type (shell, suid, sudo, etc.)
+- 🖥️ **Interactive Mode**: fzf-style autocomplete for quick navigation
 - 🎨 **Syntax Highlighting**: Color-coded output for better readability
 - 📦 **Offline Database**: No internet connection required
 - 🚀 **Instant Access**: Fast, local searches with zero latency
@@ -53,9 +56,38 @@ gtfo sudo
 # Search for python exploitation techniques
 gtfo python
 
+# Fuzzy search binaries by name
+gtfo -s pyth
+
+# Filter binaries by exploitation type
+gtfo -f shell
+gtfo -f suid
+gtfo -f sudo
+
+# Show only specific technique for a binary
+gtfo python -f sudo
+
+# Interactive mode with autocomplete
+gtfo -i
+
+# List all available binaries
+gtfo -l
+
 # Check version
 gtfo --version
 ```
+
+### Command Line Options
+
+| Option | Description |
+|--------|-------------|
+| `binary` | Unix binary to search for exploitation techniques |
+| `-s, --search TERM` | Fuzzy search binaries by name |
+| `-f, --filter TYPE` | Filter binaries by exploitation type |
+| `-i, --interactive` | Interactive mode with autocomplete |
+| `-l, --list` | List all available binaries |
+| `-v, --version` | Show version |
+| `-h, --help` | Show help message |
 
 ## Exploitation Categories
 
