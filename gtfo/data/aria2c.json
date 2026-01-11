@@ -23,9 +23,7 @@
     ],
     "suid": [
       {
-        "description": "It reads data from files, it may be used to do privileged reads or disclose files outside a restricted file system."
-      },
-      {
+        "description": "It reads data from files, it may be used to do privileged reads or disclose files outside a restricted file system.",
         "code": "LFILE='/etc/passwd'\naria2c -i $LFILE"
       }
     ],
